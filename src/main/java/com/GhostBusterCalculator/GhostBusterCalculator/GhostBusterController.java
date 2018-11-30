@@ -1,5 +1,7 @@
 package com.GhostBusterCalculator.GhostBusterCalculator;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -42,6 +44,19 @@ public ModelAndView getGhostData() {
 	mv.addObject("ghost", gW.getResults());
 	
 	return mv;
+}
+
+@RequestMapping("/showresults")
+public ModelAndView getGhostAverage(List<GhostData> gD) {
+	ModelAndView gA = new ModelAndView();
+	Integer ghostAverage = 0;
+	int temp = 0;
+		for (int i = 0; i < gD.size(); i++) {
+			temp = temp + gD.indexOf(i);
+		}
+		ghostAverage = temp / gD.size();
+		gA.addObject("ghostaverage", ghostAverage);
+		return gA;
 }
 
 @RequestMapping("/vehicle")
