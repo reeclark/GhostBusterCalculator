@@ -17,7 +17,7 @@
 					<td>${v.vehicleid}</td>
 					<td>${v.vehiclename}</td>
 					<td>${v.description}</td>
-					<td>${v.price}</td>
+					<td>$${v.price}</td>
 				</tr>
 			</c:forEach>
 		</table>
