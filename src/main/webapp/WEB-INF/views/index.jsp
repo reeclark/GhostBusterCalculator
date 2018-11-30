@@ -13,5 +13,14 @@ ${index}
 <form action="equipment" method="post">
 <input class="btn btn-primary" type="submit" value="Start here!">
 </form>
+
+<div class="container">
+	
+				<c:forEach var="ghostStuff" items="${ghost }">
+					${ghostStuff.homicide}
+				</c:forEach>
+		
+	</div>
+
 </body>
 </html>
