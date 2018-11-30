@@ -43,23 +43,29 @@ public ModelAndView getGhostData() {
 	ModelAndView mv =  new ModelAndView("results");
 	RestTemplate rt = new RestTemplate();
 	GhostWrapper gW = rt.getForObject("https://api.usa.gov/crime/fbi/sapi/api/estimates/states/mi?api_key=" + crimeKey, GhostWrapper.class);
-	mv.addObject("ghost", gW.getResults());
+	
+	
+	List<GhostData> gD = gW.getResults();
+	GhostData test = gD.get(0);
+	Integer y = 0;
+	Integer ghostAvg = 0;
+	
+
+
+		for (int i = 0; i < gD.size(); i++) {
+			GhostData x = gD.get(i);
+			Integer temp = x.getHomicide();
+			y = y + temp;
+			ghostAvg = y / gD.size();
+			
+		}
+	
+	mv.addObject("ghost", ghostAvg);
 	
 	return mv;
 }
 
-@RequestMapping("/showresults")
-public ModelAndView getGhostAverage(List<GhostData> gD) {
-	ModelAndView gA = new ModelAndView();
-	Integer ghostAverage = 0;
-	int temp = 0;
-		for (int i = 0; i < gD.size(); i++) {
-			temp = temp + gD.indexOf(i);
-		}
-		ghostAverage = temp / gD.size();
-		gA.addObject("ghostaverage", ghostAverage);
-		return gA;
-}
+
 
 @RequestMapping("/vehicle")
 public ModelAndView vehicle() {

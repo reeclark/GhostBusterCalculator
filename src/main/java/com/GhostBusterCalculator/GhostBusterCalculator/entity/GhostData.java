@@ -8,22 +8,22 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class GhostData {
 	
 	
-	private String homicide;
+	private Integer homicide;
 	
 	public GhostData() {
 		
 	}
 
-	public GhostData(String homicide) {
+	public GhostData(Integer homicide) {
 		super();
 		this.homicide = homicide;
 	}
 
-	public String getHomicide() {
+	public Integer getHomicide() {
 		return homicide;
 	}
 
-	public void setHomicide(String homicide) {
+	public void setHomicide(Integer homicide) {
 		this.homicide = homicide;
 	}
 
