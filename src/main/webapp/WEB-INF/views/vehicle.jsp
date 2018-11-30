@@ -5,26 +5,23 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Vehicle</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" />
 </head>
 <body>
 <div class="container">
-${equipment}
-<h1>Equipment</h1>
+${vehicle}
+<h1>Vehicle</h1>
 		<table class="table">
-			<c:forEach var="e" items="${equipment}">
+			<c:forEach var="v" items="${vehicle}">
 				<tr>
 					<td>${e.id}</td>
-					<td>${e.item}</td>
+					<td>${e.vehiclename}</td>
 					<td>${e.description}</td>
 					<td>${e.price}</td>
 				</tr>
 			</c:forEach>
 		</table>
-		<form action="vehicle" method="post">
-<input class="btn btn-primary" type="submit" value="Now select a vehicle!">
-</form>
 </div>
 </body>
 </html>
