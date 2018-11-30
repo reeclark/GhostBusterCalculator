@@ -3,12 +3,12 @@ package com.GhostBusterCalculator.GhostBusterCalculator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.GhostBusterCalculator.GhostBusterCalculator.Repository.EquipmentRepository;
+import com.GhostBusterCalculator.GhostBusterCalculator.Repository.VehicleRepository;
 import com.GhostBusterCalculator.GhostBusterCalculator.entity.GhostData;
 import com.GhostBusterCalculator.GhostBusterCalculator.entity.GhostWrapper;
 
@@ -21,13 +21,16 @@ public class GhostBusterController {
 	@Autowired
 	EquipmentRepository e;
 	
+	@Autowired
+	VehicleRepository v;
+	
 @RequestMapping("/")
 public ModelAndView index() {
 	return new ModelAndView("index", "index", "Hello Ghost Busters!");
 }
 
-@PostMapping("/equipment")
-public ModelAndView shop() {
+@RequestMapping("/equipment")
+public ModelAndView equipment() {
 	return new ModelAndView("equipment","equipment",e.findAll());
 }
 
@@ -39,6 +42,11 @@ public ModelAndView getGhostData() {
 	mv.addObject("ghost", gW.getResults());
 	
 	return mv;
+}
+
+@RequestMapping("/vehicle")
+public ModelAndView vehicle() {
+	return new ModelAndView("vehicle","vehicle",v.findAll());
 }
 
 }
