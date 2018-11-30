@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" />
+</head>
+<body>
+<div class="container">
+${equipment}
+<h1>Equipment</h1>
+		<table class="table">
+			<c:forEach var="e" items="${equipment}">
+				<tr>
+					<td>${e.id}</td>
+					<td>${e.item}</td>
+					<td>${e.description}</td>
+					<td>${e.price}</td>
+				</tr>
+			</c:forEach>
+		</table>
+</div>
+</body>
+</html>
