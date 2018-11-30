@@ -5,12 +5,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Equipment</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" />
 </head>
 <body>
 <div class="container">
-${equipment}
 <h1>Equipment</h1>
 		<table class="table">
 			<c:forEach var="e" items="${equipment}">

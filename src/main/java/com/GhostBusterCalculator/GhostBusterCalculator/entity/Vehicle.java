@@ -11,7 +11,7 @@ import javax.persistence.Table;
 public class Vehicle {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Integer vehicleid;
 	private String vehiclename;
 	private String description;
 	private int price;
@@ -19,7 +19,7 @@ public class Vehicle {
 		// TODO Auto-generated constructor stub
 	}
 	public Vehicle(Integer id, String vehiclename, String description, int price) {
-		this.id = id;
+		this.vehicleid = id;
 		this.vehiclename = vehiclename;
 		this.description = description;
 		this.price = price;
@@ -30,11 +30,11 @@ public class Vehicle {
 		this.description = description;
 		this.price = price;
 	}
-	public Integer getId() {
-		return id;
+	public Integer getVehicleid() {
+		return vehicleid;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setVehicleid(Integer id) {
+		this.vehicleid = id;
 	}
 	public String getVehiclename() {
 		return vehiclename;
@@ -56,7 +56,7 @@ public class Vehicle {
 	}
 	@Override
 	public String toString() {
-		return "Vehicle [id=" + id + ", vehiclename=" + vehiclename + ", description=" + description + ", price="
+		return "Vehicle [id=" + vehicleid + ", vehiclename=" + vehiclename + ", description=" + description + ", price="
 				+ price + "]";
 	}
 	
