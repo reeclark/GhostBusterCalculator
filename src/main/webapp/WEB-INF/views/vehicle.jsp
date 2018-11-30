@@ -10,15 +10,14 @@
 </head>
 <body>
 <div class="container">
-${vehicle}
 <h1>Vehicle</h1>
 		<table class="table">
 			<c:forEach var="v" items="${vehicle}">
 				<tr>
-					<td>${e.id}</td>
-					<td>${e.vehiclename}</td>
-					<td>${e.description}</td>
-					<td>${e.price}</td>
+					<td>${v.vehicleid}</td>
+					<td>${v.vehiclename}</td>
+					<td>${v.description}</td>
+					<td>${v.price}</td>
 				</tr>
 			</c:forEach>
 		</table>

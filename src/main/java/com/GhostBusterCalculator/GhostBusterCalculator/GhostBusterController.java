@@ -3,6 +3,7 @@ package com.GhostBusterCalculator.GhostBusterCalculator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
@@ -33,7 +34,7 @@ public ModelAndView equipment() {
 	return new ModelAndView("equipment","equipment",e.findAll());
 }
 
-@RequestMapping("/")
+@PostMapping("/")
 public ModelAndView getGhostData() {
 	ModelAndView mv =  new ModelAndView("index");
 	RestTemplate rt = new RestTemplate();
