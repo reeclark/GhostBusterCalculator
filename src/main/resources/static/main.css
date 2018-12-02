@@ -12,9 +12,14 @@ body{
 	background-color: #00D639;
 	color: white;
 	font-size: 30px;
+	text-shadow: 2px 2px black;
 }
 
 footer{
+	
+	border: solid;
+	border: 2px;
+	border-color: darkgrey;
 	background-color: #042600;
 	color: white;
 	font-size: 15px;
@@ -33,7 +38,7 @@ h1{
 	
 }
 
-h4{
+h2{
 	
 	font-size: 70px;
 	text-decoration: underline;
@@ -50,7 +55,12 @@ p{
 	color: white;
 	font-size: 30px;
 	text-shadow: 3px 2px black;
-	
+}
+
+table{
+	background-color: black;
+	color: black;
+	font-size: 25px;
 }
 
 

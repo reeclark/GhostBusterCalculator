@@ -12,19 +12,17 @@
 <body>
 
 <h1></h1><br><br>
-<h4>Welcome to the Ghostbusters Francise Calculator!</h4><br><br>
+<h2>Welcome to the Ghostbusters Franchise Calculator!</h2><br><br>
 
-<div class="background">
-	<div class="transbox">
-<p>The Ghostbusters have decided to start franchising! This program is designed to help you<br>
-customize your own franchise plan to present to your local financial institution. If you want to<br>
-be able to start busting ghosts, you're gonna need a load of branded capital! What, you thought the<br>
-Ghostbusters were going to finance you? If you want to be a part of this amazing opportunity, you<br>
-need to prove that you can be self sufficient (and financially liable).<br><br>
+
+<p>The Ghostbusters have decided to start franchising! This program is designed to help you
+customize your own franchise business plan to present to your local financial institution for a (totally reasonable
+and not at all regrettable) loan! Hey, if you want to be able to start busting ghosts, you're gonna need a
+load of branded capital! What, you thought the Ghostbusters were going to finance you? If you want to be a
+part of this amazing opportunity, you need to prove that you can be totally self-sufficient (and 100% financially liable).<br><br>
 So, if you're ready, let's get you started on the road to busting!<br><br>
-To get started, <a class="btn btn-custom" href="showresults">Cick Here!</a></p>
-	</div>
-</div>
+To get the slime flowing, <a class="btn btn-custom" href="equipment">Click Here!</a></p>
+<br><br>
 
 
 <!--  <form action="equipment" method="post">
@@ -37,8 +35,9 @@ To get started, <a class="btn btn-custom" href="showresults">Cick Here!</a></p>
 					
 				</c:forEach> -->
 		
-<footer>The Ghosbusters and all associated images are owned by Paramount Pictures. All uses of associated images in no way imply<br>
-that we own or have licensed these images for financial gain. This is a parody only. DON'T SUE US OVER A SILLY PROJECT....please!?</footer>
+<footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>
+ Any uses of associated images, and references, in no way imply that we own or have licensed these images for financial gain. This is<br>
+ a parody only. DON'T SUE US OVER A SILLY PROJECT....please!?</footer>
 
 </body>
 </html>
