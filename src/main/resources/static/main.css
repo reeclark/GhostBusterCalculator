@@ -1,0 +1,56 @@
+body{
+	background-attachment: fixed;
+	background-color: black;
+	background-image: url(https://orig00.deviantart.net/e2ef/f/2012/042/4/e/ghostbusters_wallpaper_dark_by_reaper_tranter-d4pfi9l.png);
+	background-position: center;
+	background-size: auto;
+	color: white;
+	text-align: center;
+}
+
+.btn-custom{
+	background-color: #00D639;
+	color: white;
+	font-size: 30px;
+}
+
+footer{
+	background-color: #042600;
+	color: white;
+	font-size: 15px;
+	padding: 20px;
+	text-align: center;
+	text-shadow: 3px 2px black;
+	
+}
+
+h1{
+	background-color: black;
+	background-image: url(https://www.collegefashion.net/.image/t_share/MTQwODUyMjExNDk1MjE2OTQz/ghostbusters2016titlejpg.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	padding: 115px;
+	
+}
+
+h4{
+	
+	font-size: 70px;
+	text-decoration: underline;
+	text-shadow: 2px 2px black;
+	
+}
+
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+p{
+	color: white;
+	font-size: 30px;
+	text-shadow: 3px 2px black;
+	
+}
+
+

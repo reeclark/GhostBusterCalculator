@@ -7,10 +7,13 @@
 <meta charset="ISO-8859-1">
 <title>Equipment</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" />
+<link rel="stylesheet" href="main.css">
 </head>
 <body>
 <div class="container">
-<h1>Equipment</h1>
+<h1></h1><br>
+<h3><a href="/">Home</a></h3>
+<h2>Equipment</h2>
 		<table class="table">
 			<c:forEach var="e" items="${equipment}">
 				<tr>
@@ -25,5 +28,8 @@
 <input class="btn btn-primary" type="submit" value="Now select a vehicle!">
 </form>
 </div>
+
+<footer>The Ghosbusters and all associated images are owned by Paramount Pictures. All uses of associated images in no way imply<br>
+that we own or have licensed these images for financial gain. This is a parody only. DON'T SUE US OVER A SILLY PROJECT....please!?</footer>
 </body>
 </html>
