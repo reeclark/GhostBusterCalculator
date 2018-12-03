@@ -14,18 +14,21 @@ The average number of deaths in Michigan over the past 23 years is: 652
 <br>
 75% of the deaths were turned into ghosts
 <br>
-First Name: <input type="text" name="firstname" value="">
-Last Name: <input type="text" name="lastname" value="">
+
+<form>
+First Name: <input type="text" name="firstname" placeholder="Joe">
+Last Name: <input type="text" name="lastname" placeholder="Schmoe">
 <br>
 Which city in Michigan would you like to start in?
 <br>
-<input type="text" name="location" value="">
+<input type="text" name="location" placeholder="Anywhere">
 <br>
 <br>
-How many people are apart of your team?
-<input type="number" name="employees" value="">
+How many people are on your team?
+<input type="number" name="employees" placeholder="99">
+<input class="btn btn-custom" type="submit" value="Keep Going">
+</form>
 
 
-<a class="btn btn-custom" href="equipment">Click here to set up equipment for your team</a>
 </body>
 </html>

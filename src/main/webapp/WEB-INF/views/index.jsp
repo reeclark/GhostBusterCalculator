@@ -26,15 +26,6 @@ To get the slime flowing, <a class="btn btn-custom" href="startup">Click Here!</
 <br><br>
 
 
-<!--  <form action="equipment" method="post">
-<input class="btn btn-primary" type="submit" value="Start here!">
-</form>-->
-
-
-	${ghost}
-				<!--   <c:forEach var="ghostStuff" items="${ghost }"> 
-					
-				</c:forEach> -->
 		
 <footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>
  Any use of associated images, characters and references in no way imply that we own or have licensed these images for financial gain. This is<br>

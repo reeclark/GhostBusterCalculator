@@ -33,8 +33,17 @@ footer{
 	border:solid grey;
 	border: 3px;
 	border-radius: 4px;
-	display: grid;
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 50px;
+	grid-row-gap: 60px;
 	justify-content: space-around;
+}
+
+.grid-item{
+	border: 2px solid grey;
+	border-radius: 4px;
+	padding: 10px;
 }
 
 h1{
