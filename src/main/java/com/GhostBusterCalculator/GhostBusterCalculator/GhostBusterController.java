@@ -5,12 +5,14 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.GhostBusterCalculator.GhostBusterCalculator.entity.User;
 import com.GhostBusterCalculator.GhostBusterCalculator.Repository.EquipmentRepository;
+import com.GhostBusterCalculator.GhostBusterCalculator.Repository.UserRepository;
 import com.GhostBusterCalculator.GhostBusterCalculator.Repository.VehicleRepository;
 import com.GhostBusterCalculator.GhostBusterCalculator.entity.GhostData;
 import com.GhostBusterCalculator.GhostBusterCalculator.entity.GhostWrapper;
@@ -27,6 +29,9 @@ public class GhostBusterController {
 	@Autowired
 	VehicleRepository v;
 	
+	@Autowired
+	UserRepository u;
+	
 @RequestMapping("/")
 public ModelAndView index() {
 	return new ModelAndView("index", "index", "Hello Ghost Busters!");
@@ -38,8 +43,9 @@ public ModelAndView about() {
 }
 
 @RequestMapping("/startup")
-public ModelAndView startup() {
-	return new ModelAndView("startup","startup","");
+public ModelAndView startup(Integer userid, String firstname, String lastname, String location, Integer employees) {
+	u.save(new User(userid, firstname, lastname, location, employees));
+	return null;
 }
 
 @RequestMapping("/equipment")
