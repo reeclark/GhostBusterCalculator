@@ -6,4 +6,6 @@ import com.GhostBusterCalculator.GhostBusterCalculator.entity.Equipment;
 
 public interface EquipmentRepository extends JpaRepository<Equipment, Integer> {
 
+	Equipment findByItem(String item);
+
 }

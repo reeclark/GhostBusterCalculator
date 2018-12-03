@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
+<div>${equip }</div>
 <h1></h1><br>
 <a class="btn btn-custom" href="/">Home</a> <a class="btn btn-custom" href="about">About</a> <a class="btn btn-custom" href="equipment">Back to Equipment</a><br><br>
 <h2>Vehicle</h2><br><br>

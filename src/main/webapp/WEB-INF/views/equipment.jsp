@@ -29,11 +29,11 @@
 		<table class="table">
 			<c:forEach var="e" items="${equipment}">
 				<tr>
-					<td><input type="checkbox" name="quantity" value="">${e.id}</td>
+					<td>${e.id}</td>
 					<td>${e.item}</td>
 					<td>${e.description}</td>
 					<td>${e.price}</td>
-<!-- 					<td><input type="checkbox" name="quantity" value=""></td> -->
+					<td><input type="checkbox" name="quantity" value=""></td>
 				</tr>
 			</c:forEach>
 		</table>
