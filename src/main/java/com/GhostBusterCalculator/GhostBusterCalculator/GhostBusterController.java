@@ -37,6 +37,11 @@ public ModelAndView about() {
 	return new ModelAndView("about");
 }
 
+@RequestMapping("/startup")
+public ModelAndView startup() {
+	return new ModelAndView("startup","startup","");
+}
+
 @RequestMapping("/equipment")
 public ModelAndView equipment() {
 	return new ModelAndView("equipment","equipment",e.findAll());

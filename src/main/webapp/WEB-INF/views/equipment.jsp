@@ -33,6 +33,7 @@
 					<td>${e.item}</td>
 					<td>${e.description}</td>
 					<td>${e.price}</td>
+					<td><input type="checkbox" name="quantity" value=""></td>
 				</tr>
 			</c:forEach>
 		</table>

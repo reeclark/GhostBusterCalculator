@@ -22,7 +22,7 @@ and not at all regrettable) loan! Hey, if you want to be able to start busting g
 load of bread to capitalize! What, you thought the Ghostbusters were going to finance you? If you want to be a
 part of this amazing opportunity, you need to prove that you can be totally self-sufficient (and 100% financially liable).<br><br>
 So, if you're ready, let's get you started on the road to busting!<br><br>
-To get the slime flowing, <a class="btn btn-custom" href="equipment">Click Here!</a></p>
+To get the slime flowing, <a class="btn btn-custom" href="startup">Click Here!</a></p>
 <br><br>
 
 
