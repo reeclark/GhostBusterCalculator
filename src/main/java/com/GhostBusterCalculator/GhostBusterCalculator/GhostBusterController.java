@@ -14,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.GhostBusterCalculator.GhostBusterCalculator.Repository.EquipmentRepository;
 import com.GhostBusterCalculator.GhostBusterCalculator.Repository.UserRepository;
 import com.GhostBusterCalculator.GhostBusterCalculator.Repository.VehicleRepository;
+import com.GhostBusterCalculator.GhostBusterCalculator.entity.Equipment;
 import com.GhostBusterCalculator.GhostBusterCalculator.entity.GhostData;
 import com.GhostBusterCalculator.GhostBusterCalculator.entity.GhostWrapper;
 import com.GhostBusterCalculator.GhostBusterCalculator.entity.User;
@@ -86,8 +87,12 @@ public ModelAndView getGhostData() {
 
 
 @RequestMapping("/vehicle")
-public ModelAndView vehicle() {
-	return new ModelAndView("vehicle","vehicle",v.findAll());
+public ModelAndView vehicle(@RequestParam("item") String item) {
+	Equipment equip = e.findByItem(item);
+	ModelAndView mv = new ModelAndView("vehicle");
+	mv.addObject("equip", equip);
+	mv.addObject("vehicle", v.findAll());
+	return mv;
 }
 
 }
