@@ -43,7 +43,7 @@ public ModelAndView about() {
 }
 
 @RequestMapping("/startup")
-public ModelAndView startup(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname, @RequestParam("location") String location, @RequestParam("employees") Integer employees) {
+public ModelAndView startup(String firstname, String lastname, String location, Integer employees) {
 	u.save(new User(firstname, lastname, location, employees));
 	return new ModelAndView("redirect:/equipment");
 }
@@ -60,14 +60,10 @@ public ModelAndView getGhostData() {
 	RestTemplate rt = new RestTemplate();
 	GhostWrapper gW = rt.getForObject("https://api.usa.gov/crime/fbi/sapi/api/estimates/states/mi?api_key=" + crimeKey, GhostWrapper.class);
 	
-	
 	List<GhostData> gD = gW.getResults();
-	GhostData test = gD.get(0);
 	Integer y = 0;
 	Integer ghostAvg = 0;
 	
-
-
 		for (int i = 0; i < gD.size(); i++) {
 			GhostData x = gD.get(i);
 			Integer temp = x.getHomicide();
