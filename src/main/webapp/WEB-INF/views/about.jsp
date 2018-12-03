@@ -13,7 +13,7 @@
 	<h1></h1>
 	<br>
 	<a class="btn btn-custom" href="/">Home</a>
-	<a class="btn btn-custom" href="equipment">Get Started!</a>
+	<a class="btn btn-custom" href="startup">Get Started!</a>
 	<br>
 	<br>
 	<h2>About the Founders</h2>

@@ -43,8 +43,9 @@ public ModelAndView about() {
 }
 
 @RequestMapping("/startup")
-public ModelAndView startup(String firstname, String lastname, String location, Integer employees) {
-	u.save(new User(firstname, lastname, location, employees));
+public ModelAndView getNewUser(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname, @RequestParam("location") String location, @RequestParam("employees") Integer employees) {
+	User p1 = new User(firstname, lastname, location, employees);
+	u.save(p1);
 	return new ModelAndView("redirect:/equipment");
 }
 
