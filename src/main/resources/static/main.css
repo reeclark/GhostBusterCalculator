@@ -29,6 +29,14 @@ footer{
 	
 }
 
+.grid-container{
+	border:solid grey;
+	border: 3px;
+	border-radius: 4px;
+	display: grid;
+	justify-content: space-around;
+}
+
 h1{
 	background-color: black;
 	background-image: url(https://www.collegefashion.net/.image/t_share/MTQwODUyMjExNDk1MjE2OTQz/ghostbusters2016titlejpg.jpg);
@@ -48,11 +56,6 @@ h2{
 
 h3{
 	image-align: left;
-}
-
-img {
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 p{
