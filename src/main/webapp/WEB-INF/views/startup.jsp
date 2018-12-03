@@ -11,6 +11,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 	<h1></h1>
 	<br>
 	<a class="btn btn-custom">Home</a>
@@ -40,5 +41,26 @@
 		This is<br> a parody only. DON'T SUE US OVER A SILLY
 		PROJECT....please!?
 	</footer>
+=======
+The average number of deaths in Michigan over the past 23 years is: 652
+<br>
+75% of the deaths were turned into ghosts
+<br>
+
+
+<form action="equipment" method="post" onsubmit="return validateInfo()">
+First Name: <input type="text" name="firstname" >
+Last Name: <input type="text" name="lastname" >
+<br>
+Which city in Michigan would you like to start in?
+<br>
+<input type="text" name="location" value="?">
+<br>
+How many people are apart of your team?
+<input type="number" name="employees" value="0">
+<input class="btn btn-primary" type="submit" value="Next">
+</form>
+<!-- <a class="btn btn-custom" href="equipment">Click here to set up equipment for your team</a> -->
+>>>>>>> 5ba698a8257a8e7120478530ca308a39336c0269
 </body>
 </html>
