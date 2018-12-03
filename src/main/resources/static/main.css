@@ -40,10 +40,14 @@ h1{
 
 h2{
 	
-	font-size: 70px;
+	font-size: 80px;
 	text-decoration: underline;
 	text-shadow: 2px 2px black;
 	
+}
+
+h3{
+	image-align: left;
 }
 
 img {
@@ -53,7 +57,7 @@ img {
 
 p{
 	color: white;
-	font-size: 30px;
+	font-size: 25px;
 	text-shadow: 3px 2px black;
 }
 

@@ -11,8 +11,12 @@
 </head>
 <body>
 
-<h1></h1>
-<a class="btn btn-custom" href="/">Home</a><br>
+<h1></h1><br>
+
+
+<a class="btn btn-custom" href="/">Home</a> <a class="btn btn-custom" href="about">About</a>
+<br><br>
+
 
 <div class="container">
 
@@ -33,11 +37,12 @@
 			</c:forEach>
 		</table>
 		<form action="vehicle" method="post">
-<input class="btn btn-custom" type="submit" value="Now select a vehicle!">
+<input class="btn btn-custom" href="vehicle" type="submit" value="Now select a vehicle!">
 </form>
 </div><br><br>
 
-<footer>The Ghosbusters and all associated images are owned by Paramount Pictures. All uses of associated images in no way imply<br>
-that we own or have licensed these images for financial gain. This is a parody only. DON'T SUE US OVER A SILLY PROJECT....please!?</footer>
+<footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>
+ Any use of associated images, characters and references in no way imply that we own or have licensed these images for financial gain. This is<br>
+ a parody only. DON'T SUE US OVER A SILLY PROJECT....please!?</footer>
 </body>
 </html>

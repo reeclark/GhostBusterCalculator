@@ -32,6 +32,11 @@ public ModelAndView index() {
 	return new ModelAndView("index", "index", "Hello Ghost Busters!");
 }
 
+@RequestMapping("/about")
+public ModelAndView about() {
+	return new ModelAndView("about");
+}
+
 @RequestMapping("/equipment")
 public ModelAndView equipment() {
 	return new ModelAndView("equipment","equipment",e.findAll());
