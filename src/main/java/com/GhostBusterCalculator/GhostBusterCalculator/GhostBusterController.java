@@ -42,26 +42,33 @@ public ModelAndView about() {
 }
 
 @RequestMapping("/startup")
-<<<<<<< HEAD
-public ModelAndView getNewUser(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname, @RequestParam("location") String location, @RequestParam("employees") Integer employees) {
+public ModelAndView startup() {
+	return new ModelAndView("startup");
+}
+
+@PostMapping("/adduser")
+public ModelAndView registerUser(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname, 
+		  @RequestParam("location") String location, @RequestParam("employees") Integer employees) {
 	User p1 = new User(firstname, lastname, location, employees);
 	u.save(p1);
 	return new ModelAndView("redirect:/equipment");
-=======
-public ModelAndView startup() {
-	return new ModelAndView("startup","startup","START PAGE");
->>>>>>> 5ba698a8257a8e7120478530ca308a39336c0269
+
 }
 
-@PostMapping("/equipment")
-public ModelAndView startup(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname, 
-		  @RequestParam("location") String location, @RequestParam("employees") Integer employees) {
-	System.out.println(new User(firstname, lastname, location, employees));
-	u.save(new User(firstname, lastname, location, employees));
-//	return null;
-	//e.findAll()
-	return new ModelAndView("equipment","equipment",e.findAll());
+@RequestMapping("/equipment")
+public ModelAndView pickEquipment() {
+	return new ModelAndView("equipment");
 }
+
+//@PostMapping("/equipment")
+//public ModelAndView startup(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname, 
+//		  @RequestParam("location") String location, @RequestParam("employees") Integer employees) {
+//	System.out.println(new User(firstname, lastname, location, employees));
+//	u.save(new User(firstname, lastname, location, employees));
+////	return null;
+//	//e.findAll()
+//	return new ModelAndView("equipment","equipment",e.findAll());
+//}
 
 @RequestMapping("/showresults")
 public ModelAndView getGhostData() {

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>About</title>
+<title>About the Ghostbusters</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css">
 <link rel="stylesheet" href="main.css">
@@ -24,7 +24,7 @@
 		The Ghostbusters were founded in New York City in 1984 by
 		parapsychologists Dr. Peter Venkman, Dr. Raymond Stanz, and Dr. Egon
 		Spengler. After a harrowing encounter at the New York Public Library,
-		with the ghost of former librarian Eleanor Twitty, These enterprising
+		with the ghost of former librarian Eleanor Twitty, these enterprising
 		ecto-hunters discovered that with a little know-how, and the right
 		nuclear-powered particle accelerator, a ghost could be captured and
 		held indefinitely! Thus, the Ghostbusters were born.<br>
@@ -37,7 +37,7 @@
 		a spirit at the Sedgewick Hotel. Afterwards the exploits of these
 		spectre-snaring scientists quickly became the stuff of legend.
 		Business soon became almost more than the team could handle, so they
-		eventually hired the newest addition to the team, Winston Zeddemore.
+		eventually hired the newest addition to the crew, Winston Zeddemore.
 		An initially skeptical man, Winston quickly became a full believer in
 		the paranormal. He is the wise, commonsensical everyman of the group
 		who keeps a healthy skepticism while still pursuing the vaporous
@@ -83,6 +83,8 @@
 		</div>
 
 	</div>
+	<br>
+	<br>
 
 
 	<footer>
