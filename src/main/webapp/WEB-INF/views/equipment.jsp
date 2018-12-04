@@ -35,7 +35,7 @@
 		<br>
 
 
-		<form>
+		<form action="addequipment" method="post">
 			<input type="hidden" name="userid" value="${userid }">
 			<table class="table">
 				<thead>
@@ -52,15 +52,15 @@
 						<td>${e.id}</td>
 						<td>${e.item}</td>
 						<td>${e.description}</td>
-						<td>${e.price}</td>
+						<td>${e.price}<input type="hidden" name="price" value="${e.price }"></td>
 						<td><img src="${e.image }" width="125" height="175"></td>
-						<td><input type="number" name="quantity" value=""></td>
+						<td><input type="number" name="quantity" value="0"></td>
 					</tr>
 				</tbody>	
 				</c:forEach>
 			</table><br><br>
 			
-				<a class="btn btn-custom" action="addequipment" type="submit">Vehicle Selection</a>
+				<input class="btn btn-custom" type="submit" value="Vehicle Selection">
 			</form>
 	</div>
 	<br>

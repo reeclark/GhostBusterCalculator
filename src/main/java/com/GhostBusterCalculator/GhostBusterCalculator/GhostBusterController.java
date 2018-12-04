@@ -1,5 +1,6 @@
 package com.GhostBusterCalculator.GhostBusterCalculator;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,98 +22,115 @@ import com.GhostBusterCalculator.GhostBusterCalculator.entity.User;
 
 @Controller
 public class GhostBusterController {
-	
+
 	@Value("${fbicrime.key}")
 	String crimeKey;
-	
+
 	@Autowired
 	VehicleRepository v;
 	@Autowired
 	UserRepository u;
 	@Autowired
 	EquipmentRepository e;
-	
+
 	private User userPermanent;
-	
-@RequestMapping("/")
-public ModelAndView index() {
-	return new ModelAndView("index", "index", "Hello Ghost Busters!");
-}
 
-@RequestMapping("/about")
-public ModelAndView about() {
-	return new ModelAndView("about");
-}
+	@RequestMapping("/")
+	public ModelAndView index() {
+		return new ModelAndView("index", "index", "Hello Ghost Busters!");
+	}
 
-@RequestMapping("/startup")
-public ModelAndView startup() {
-	return new ModelAndView("startup","startup","");
-}
+	@RequestMapping("/about")
+	public ModelAndView about() {
+		return new ModelAndView("about");
+	}
 
+	@RequestMapping("/startup")
+	public ModelAndView startup() {
+		return new ModelAndView("startup", "startup", "");
+	}
 
-@RequestMapping("/adduser")
-public ModelAndView registerUser(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname, 
-		  @RequestParam("location") String location, @RequestParam("employees") Integer employees) {
-	User p1 = new User(firstname, lastname, location, employees);
-	u.save(p1);
-	return new ModelAndView("redirect:/equipment");
+	@RequestMapping("/adduser")
+	public ModelAndView registerUser(@RequestParam("firstname") String firstname,
+			@RequestParam("lastname") String lastname, @RequestParam("location") String location,
+			@RequestParam("employees") Integer employees) {
+		userPermanent = new User(firstname, lastname, location, employees);
+		u.save(userPermanent);
+		return new ModelAndView("redirect:/equipment");
 
-}
+	}
 
-@RequestMapping("/equipment")
-public ModelAndView pickEquipment() {
-	return new ModelAndView("equipment", "equipment", e.findAll());
+	@RequestMapping("/equipment")
+	public ModelAndView pickEquipment() {
+		return new ModelAndView("equipment", "equipment", e.findAll());
 
-}
+	}
 
-@PostMapping("/addequipment")
-public ModelAndView addEquipment(@RequestParam("price") Float price, @RequestParam("quantity")int quantity) {
-	Float equipmentcost = price * quantity;
-	userPermanent = new User(equipmentcost);
-	u.save(userPermanent);
-	return new ModelAndView("redirect:/vehicle");
-}
+	@PostMapping("/addequipment")
+	public ModelAndView addEquipment(@RequestParam("price") Float price, @RequestParam("quantity") String quantity) {
 
-@RequestMapping("/vehicle")
-public ModelAndView vehicle(@RequestParam("quantity") int num, @RequestParam("id") int itemId) {
-	Equipment test = e.findById(itemId).orElse(null);
-	System.out.println(test.getPrice() * num);
-	
+		String[] items = quantity.split(",");
+		System.out.println(Arrays.toString(items));
+		float total = 0;
+		for (int i = 0; i < items.length; i++) {
+			if (!items[i].equals("0")) {
+				int numItems = Integer.parseInt(items[i]);
+				Equipment addEquipment = e.findById(i + 1).orElse(null);
+				Float equipmentcost = addEquipment.getPrice() * numItems;
+				System.out.println(addEquipment + " " + numItems + "  " + equipmentcost);
+				total += equipmentcost;
+			}
+			
+		}
 		
-		return new ModelAndView("vehicle","vehicle",v.findAll());
-}
+		userPermanent.setEquipmentcost(total);
+		u.save(userPermanent);
+
+		return new ModelAndView("redirect:/vehicles");
+	}
+
+	@RequestMapping("/vehicles")
+	public ModelAndView vehicleTest() {
+
+		return new ModelAndView("vehicle", "vehicle", v.findAll());
+	}
+
+	@RequestMapping("/vehicle")
+	public ModelAndView vehicle(@RequestParam("quantity") int num, @RequestParam("id") int itemId) {
+		Equipment test = e.findById(itemId).orElse(null);
+		System.out.println(test.getPrice() * num);
+
+		return new ModelAndView("vehicle", "vehicle", v.findAll());
+	}
 
 //@RequestMapping("/vehicle")
 //public ModelAndView vehicle() {
 //	return new ModelAndView("vehicle", "vehicle", v.findAll());
 //}
 
-@RequestMapping("/results")
+	@RequestMapping("/results")
+	public ModelAndView getGhostData() {
+		ModelAndView mv = new ModelAndView("results");
+		RestTemplate rt = new RestTemplate();
+		GhostWrapper gW = rt.getForObject(
+				"https://api.usa.gov/crime/fbi/sapi/api/estimates/states/mi?api_key=" + crimeKey, GhostWrapper.class);
 
-public ModelAndView getGhostData() {
-	ModelAndView mv =  new ModelAndView("results");
-	RestTemplate rt = new RestTemplate();
-	GhostWrapper gW = rt.getForObject("https://api.usa.gov/crime/fbi/sapi/api/estimates/states/mi?api_key=" + crimeKey, GhostWrapper.class);
-	
-	List<GhostData> gD = gW.getResults();
-	GhostData test = gD.get(0);
-	Integer y = 0;
-	Integer ghostAvg = 0;
-	
+		List<GhostData> gD = gW.getResults();
+		GhostData test = gD.get(0);
+		Integer y = 0;
+		Integer ghostAvg = 0;
+
 		for (int i = 0; i < gD.size(); i++) {
 			GhostData x = gD.get(i);
 			Integer temp = x.getHomicide();
 			y = y + temp;
 			ghostAvg = y / gD.size();
-			
+
 		}
-	
-	mv.addObject("ghost", ghostAvg);
-	mv.addObject("userStuff", userPermanent);
-	return mv;
-}
 
-
-
+		mv.addObject("ghost", ghostAvg);
+		mv.addObject("userStuff", userPermanent);
+		return mv;
+	}
 
 }
