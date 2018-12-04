@@ -23,6 +23,7 @@
 
 <h2>Equipment</h2><br><br>
 
+	<p>Ok, <c:forEach items="adduser" val="p"> ${p.firstname } </c:forEach></p>
 
 	<p>First, you're going to need some equipment. You can't just yell "Get Her!" and try to grab the ghost. You need
 	some highly specialized (and 100%, totally legal) gear. Below is a simple form to help you select how much equipment you'll 
@@ -45,6 +46,19 @@
 		</table>
 		<input class="btn btn-custom" action="gettotal" type="submit" value="Now select a vehicle!">
 		</form>
+
+					<td><form action="vehicle"><input type="number" name="quantity">
+					<input type="hidden" name="id" value="${e.id}">
+					<input type="submit" value="add"></form></td>
+					
+					<!--  -->
+				</tr>
+			
+		</table>
+		<form action="vehicle" method="post">
+<a class="btn btn-custom" href="vehicle">Vehicle Selection</a>
+</form>
+
 </div><br><br>
 
 <footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>

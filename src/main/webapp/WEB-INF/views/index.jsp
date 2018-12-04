@@ -15,7 +15,6 @@
 <a class="btn btn-custom" href="about">About</a><br><br>
 <h2>Welcome to the Ghostbusters Franchise Calculator!</h2><br><br>
 
-
 <p>The Ghostbusters have decided to start franchising! This program is designed to help you
 customize your own franchise business plan to present to your local financial institution for a (totally reasonable
 and not at all regrettable) loan! Hey, if you want to be able to start busting ghosts, you're gonna need a
@@ -25,7 +24,11 @@ So, if you're ready, let's get you started on the road to busting!<br><br>
 To get the slime flowing, <a class="btn btn-custom" href="startup">Click Here!</a></p>
 <br><br>
 
+<<<<<<< HEAD
+${ghost}
+=======
 
+>>>>>>> d81300f347d6471cad0ecfb79f0aa96a6ece98c4
 		
 <footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>
  Any use of associated images, characters and references in no way imply that we own or have licensed these images for financial gain. This is<br>
