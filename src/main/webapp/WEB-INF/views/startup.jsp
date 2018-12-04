@@ -4,7 +4,6 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<<<<<<< HEAD
 <title>Start up</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" />
 <link rel="stylesheet" href="main.css">
@@ -32,11 +31,6 @@ How many people are apart of your team?
 <input class="btn btn-primary" type="submit" value="Next">
 </form>
 </div>
-=======
-<title>Getting Started</title>
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" />
-<link rel="stylesheet" href="main.css">
 </head>
 <body>
 
@@ -67,6 +61,5 @@ How many people are apart of your team?
 		This is<br> a parody only. DON'T SUE US OVER A SILLY
 		PROJECT....please!?
 	</footer>
->>>>>>> d81300f347d6471cad0ecfb79f0aa96a6ece98c4
 </body>
 </html>
