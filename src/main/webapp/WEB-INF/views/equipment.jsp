@@ -33,12 +33,16 @@
 					<td>${e.item}</td>
 					<td>${e.description}</td>
 					<td>${e.price}</td>
-					<td><input type="checkbox" name="quantity" value=""></td>
+					<td><form action="vehicle"><input type="number" name="quantity">
+					<input type="hidden" name="id" value="${e.id}">
+					<input type="submit" value="add"></form></td>
+					
+					<!--  -->
 				</tr>
 			</c:forEach>
 		</table>
 		<form action="vehicle" method="post">
-<input class="btn btn-custom" href="vehicle" type="submit" value="Now select a vehicle!">
+<a class="btn btn-custom" href="vehicle">Vehicle Selection</a>
 </form>
 </div><br><br>
 
