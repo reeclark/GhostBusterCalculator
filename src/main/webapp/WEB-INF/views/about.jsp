@@ -15,15 +15,6 @@
 <a class="btn btn-custom" href="/">Home</a> <a class="btn btn-custom" href="startup">Get Started!</a><br><br>
 <h2>About the Founders</h2><br><br>
 
-	<h1></h1>
-	<br>
-	<a class="btn btn-custom" href="/">Home</a>
-	<a class="btn btn-custom" href="startup">Get Started!</a>
-	<br>
-	<br>
-	<h2>About the Founders</h2>
-	<br>
-	<br>
 
 	<p>
 		The Ghostbusters were founded in New York City in 1984 by

@@ -9,49 +9,32 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div class="container">
-<a class="btn btn-custom" href="/">Home</a>
-<br>
-The average number of deaths in Michigan over the past 23 years is: 652
-<br>
-75% of the deaths were turned into ghosts
-<br>
-
-
-<form action="equipment" method="post" onsubmit="return validateInfo()">
-First Name: <input type="text" name="firstname" >
-Last Name: <input type="text" name="lastname" >
-<br>
-Which city in Michigan would you like to start in?
-<br>
-<input type="text" name="location">
-<br>
-How many people are apart of your team?
-<input type="number" name="employees" value="1">
-<input class="btn btn-primary" type="submit" value="Next">
-</form>
-</div>
-</head>
-<body>
-
-<h1></h1><br>
-<a class="btn btn-custom" href="/">Home</a> <a class="btn btn-custom" href="about">About</a><br><br>
-
-
-	The average number of deaths in Michigan over the past 23 years is: 652
-	<br> 75% of the deaths were turned into ghosts
+	<h1></h1>
 	<br>
-
-
-	<form class="formstyle" action="adduser" >
-		First Name: <input type="text" name="firstname"> 
-		Last Name: <input type="text" name="lastname"> <br>
-		Which city in Michigan would you like to start in? <br> <input type="text"name="location" value="?"> <br> 
-		How many people are on your team? <input type="number" name="employees" value="0">
-		<input class="btn btn-custom" type="submit" value="Next">
-	</form>
+	<a class="btn btn-custom" href="/">Home</a>
+	<a class="btn btn-custom" href="about">About</a>
 	<br>
 	<br>
+	<div class="container">
+		number of deaths in Michigan over the past 23 years is: 652 <br>
+		75% of the deaths were turned into ghosts <br>
+
+
+		<form action="adduser" method="post"
+			onsubmit="return validateInfo()">
+			First Name: <input type="text" name="firstname"> Last Name:
+			<input type="text" name="lastname"> <br> Which city in
+			Michigan would you like to start in? <br> <input type="text"
+				name="location"> <br> How many people are apart of your
+			team? <input type="number" name="employees" value="1"> 
+			<input class="btn btn-custom" type="submit" value="Next">
+		</form>
+	</div><br><br>
+
+
+
+
+
 
 	<footer>
 		The Ghostbusters and all associated images are owned by Sony Pictures

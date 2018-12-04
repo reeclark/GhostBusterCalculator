@@ -72,6 +72,13 @@ public class User {
 		this.location = location;
 		this.employees = employees;
 	}
+	
+	
+
+	public User(Float equipmentcost) {
+		super();
+		this.equipmentcost = equipmentcost;
+	}
 
 	public Integer getUserid() {
 		return userid;
