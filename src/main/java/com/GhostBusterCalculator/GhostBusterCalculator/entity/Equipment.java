@@ -14,18 +14,34 @@ public class Equipment {
 	private Integer id;
 	private String item;
 	private String description;
-	private int price;
+	private Float price;
+	private String image;
+	
 	public Equipment() {
 		// TODO Auto-generated constructor stub
 	}
-	public Equipment(Integer id, String item, String description, int price) {
+	
+	
+	
+	public Equipment(Integer id, String item, String description, Float price, String image) {
+		super();
+		this.id = id;
+		this.item = item;
+		this.description = description;
+		this.price = price;
+		this.image = image;
+	}
+
+
+
+	public Equipment(Integer id, String item, String description, Float price) {
 		this.id = id;
 		this.item = item;
 		this.description = description;
 		this.price = price;
 	}
 	
-	public Equipment(String item, String description, int price) {
+	public Equipment(String item, String description, Float price) {
 		this.item = item;
 		this.description = description;
 		this.price = price;
@@ -48,12 +64,25 @@ public class Equipment {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public int getPrice() {
+	public Float getPrice() {
 		return price;
 	}
-	public void setPrice(int price) {
+	public void setPrice(Float price) {
 		this.price = price;
 	}
+	
+	public String getImage() {
+		return image;
+	}
+
+
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+
+
 	@Override
 	public String toString() {
 		return "Equipment [id=" + id + ", item=" + item + ", description=" + description + ", price=" + price + "]";

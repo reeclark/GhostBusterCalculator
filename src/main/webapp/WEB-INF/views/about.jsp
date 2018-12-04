@@ -41,7 +41,7 @@
 		An initially skeptical man, Winston quickly became a full believer in
 		the paranormal. He is the wise, commonsensical everyman of the group
 		who keeps a healthy skepticism while still pursuing the vaporous
-		apparitions plauging the populous. He has remained with the
+		apparitions plaguing the populous. He has remained with the
 		organization ever since.
 	</p>
 	<br>

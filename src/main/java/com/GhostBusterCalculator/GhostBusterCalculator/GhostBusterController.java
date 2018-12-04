@@ -47,7 +47,7 @@ public ModelAndView startup() {
 	return new ModelAndView("startup");
 }
 
-@PostMapping("/adduser")
+@RequestMapping("/adduser")
 public ModelAndView registerUser(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname, 
 		  @RequestParam("location") String location, @RequestParam("employees") Integer employees) {
 	User p1 = new User(firstname, lastname, location, employees);
@@ -58,8 +58,37 @@ public ModelAndView registerUser(@RequestParam("firstname") String firstname, @R
 
 @RequestMapping("/equipment")
 public ModelAndView pickEquipment() {
-	return new ModelAndView("equipment");
+	return new ModelAndView("equipment", "equipment", e.findAll());
+
 }
+
+@RequestMapping("/addequipment")
+public ModelAndView addNewEquipment() {
+	Equipment e1 = new Equipment();
+	User p1 = new User();
+	Float cost = e1.getPrice() * p1.getEmployees();
+	p1.setEquipmentcost(cost);
+	u.save(p1);
+	return new ModelAndView("redirect:/vehicle");
+}
+
+@RequestMapping("/gettotal")
+public ModelAndView getEquipmentTotal() {
+	User p1 = new User();
+	Float sub = p1.getEquipmentcost();
+	Float total = sub * p1.getEmployees();
+	p1.setTotal(total);
+	u.save(p1);
+	
+	
+	return new ModelAndView("redirect:/vehicle");
+}
+
+@RequestMapping("/vehicle")
+public ModelAndView vehicle() {
+	return new ModelAndView("vehicle", "vehicle", v.findAll());
+}
+
 
 //@PostMapping("/equipment")
 //public ModelAndView startup(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname, 
@@ -96,13 +125,13 @@ public ModelAndView getGhostData() {
 
 
 
-@RequestMapping("/vehicle")
-public ModelAndView vehicle(@RequestParam("item") String item) {
-	Equipment equip = e.findByItem(item);
-	ModelAndView mv = new ModelAndView("vehicle");
-	mv.addObject("equip", equip);
-	mv.addObject("vehicle", v.findAll());
-	return mv;
-}
+//@RequestMapping("/vehicle")
+//public ModelAndView vehicle(@RequestParam("item") String item) {
+//	Equipment equip = e.findByItem(item);
+//	ModelAndView mv = new ModelAndView("vehicle");
+//	mv.addObject("equip", equip);
+//	mv.addObject("vehicle", v.findAll());
+//	return mv;
+//}
 
 }

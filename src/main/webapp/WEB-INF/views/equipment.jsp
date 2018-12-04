@@ -23,9 +23,14 @@
 
 <h2>Equipment</h2><br><br>
 
+
 	<p>First, you're going to need some equipment. You can't just yell "Get Her!" and try to grab the ghost. You need
-	some highly specialized (and 100% legal) gear. You'll also need to hire some help! Below is a simple form to help you
-	select how many Ghostbusters you're going to start with, and how much equipment you'll need to get them started.</p><br><br>
+	some highly specialized (and 100%, totally legal) gear. Below is a simple form to help you select how much equipment you'll 
+	need to get your team started.</p><br><br>
+		
+		
+		<form>
+		<input type="hidden" name="userid" value="${userid }">
 		<table class="table">
 			<c:forEach var="e" items="${equipment}">
 				<tr>
@@ -33,13 +38,13 @@
 					<td>${e.item}</td>
 					<td>${e.description}</td>
 					<td>${e.price}</td>
-					<td><input type="checkbox" name="quantity" value=""></td>
+					<td><img src="${e.image }" width="125" height="175"></td>
+					<td><input action="addequipment" type="checkbox" name="quantity" value=""></td>
 				</tr>
 			</c:forEach>
 		</table>
-		<form action="vehicle" method="post">
-<input class="btn btn-custom" href="vehicle" type="submit" value="Now select a vehicle!">
-</form>
+		<input class="btn btn-custom" action="gettotal" type="submit" value="Now select a vehicle!">
+		</form>
 </div><br><br>
 
 <footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>

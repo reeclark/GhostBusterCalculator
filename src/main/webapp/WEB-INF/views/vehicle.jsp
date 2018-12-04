@@ -31,6 +31,8 @@ must remain within Ghostbuster corporate standards, so these fees will be automa
 		</table>
 </div><br><br>
 
+<input class="btn btn-custom" type="submit" value="Finish"><br><br>
+
 
 <footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>
  Any use of associated images, characters and references in no way imply that we own or have licensed these images for financial gain. This is<br>

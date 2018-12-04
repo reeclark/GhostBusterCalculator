@@ -13,26 +13,27 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer userid;
-	@Column
+	
+
 	private String firstname;
-	@Column
+	
 	private String lastname;
-	@Column
-	private Integer equipmentcost;
-	@Column
+	
+	private Float equipmentcost;
+
 	private Integer vehiclecost;
-	@Column
-	private Integer total;
-	@Column
+
+	private Float total;
+
 	private String location;
-	@Column
+
 	private Integer employees;
 	
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(Integer userid, String firstname, String lastname, Integer equipmentcost, Integer vehiclecost, Integer total,
+	public User(Integer userid, String firstname, String lastname, Float equipmentcost, Integer vehiclecost, Float total,
 			String location, Integer employees) {
 		this.userid = userid;
 		this.firstname = firstname;
@@ -44,7 +45,7 @@ public class User {
 		this.employees = employees;
 	}
 	
-	public User(String firstname, String lastname, Integer equipmentcost, Integer vehiclecost, Integer total,
+	public User(String firstname, String lastname, Float equipmentcost, Integer vehiclecost, Float total,
 			String location, Integer employees) {
 		this.firstname = firstname;
 		this.lastname = lastname;
@@ -96,11 +97,11 @@ public class User {
 		this.lastname = lastname;
 	}
 
-	public Integer getEquipmentcost() {
+	public Float getEquipmentcost() {
 		return equipmentcost;
 	}
 
-	public void setEquipmentcost(Integer equipmentcost) {
+	public void setEquipmentcost(Float equipmentcost) {
 		this.equipmentcost = equipmentcost;
 	}
 
@@ -112,11 +113,11 @@ public class User {
 		this.vehiclecost = vehiclecost;
 	}
 
-	public Integer getTotal() {
+	public Float getTotal() {
 		return total;
 	}
 
-	public void setTotal(Integer total) {
+	public void setTotal(Float total) {
 		this.total = total;
 	}
 

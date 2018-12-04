@@ -20,7 +20,7 @@
 	<br>
 
 
-	<form class="formstyle" action="adduser" onsubmit="return validateInfo()">
+	<form class="formstyle" action="adduser" >
 		First Name: <input type="text" name="firstname"> 
 		Last Name: <input type="text" name="lastname"> <br>
 		Which city in Michigan would you like to start in? <br> <input type="text"name="location" value="?"> <br> 
