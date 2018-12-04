@@ -1,5 +1,6 @@
 package com.GhostBusterCalculator.GhostBusterCalculator.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,12 +13,19 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer userid;
+	@Column
 	private String firstname;
+	@Column
 	private String lastname;
+	@Column
 	private Integer equipmentcost;
+	@Column
 	private Integer vehiclecost;
+	@Column
 	private Integer total;
+	@Column
 	private String location;
+	@Column
 	private Integer employees;
 	
 	public User() {
