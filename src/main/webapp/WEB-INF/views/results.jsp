@@ -11,14 +11,17 @@
 <body>
 <h1></h1><br>
 <a class="btn btn-custom" href="/">Home</a>
-<<<<<<< HEAD
 
-=======
-${ghost}
 
 <br>
 <h1>${userStuff.firstname }</h1>
->>>>>>> 0d8395d527c66e69c0dda22135aac73badce0dd7
+
+<h1>${userStuff.lastname }</h1>
+<h1>${userStuff.equipmentcost }</h1>
+<h1>${userStuff.vehiclecost }</h1>
+<h1>${userStuff.total }</h1>
+<h1>${userStuff.location }</h1>
+<h1>${userStuff.employees }</h1>
 
 
 <footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>

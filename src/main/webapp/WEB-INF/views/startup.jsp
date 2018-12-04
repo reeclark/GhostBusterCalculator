@@ -20,21 +20,23 @@
 		75% of the deaths were turned into ghosts <br>
 
 
-		<form action="adduser" method="post"
-			onsubmit="return validateInfo()">
-			First Name: <input type="text" name="firstname"> Last Name:
-			<input type="text" name="lastname"> <br> Which city in
-			Michigan would you like to start in? <br> <input type="text"
-				name="location"> <br> How many people are apart of your
-			team? <input type="number" name="employees" value="1"> 
-			<input class="btn btn-custom" type="submit" value="Next">
-		</form>
-	</div><br><br>
-
-
-
-
-
+<form action="equipment" method="post" onsubmit="return validateInfo()">
+First Name: <input type="text" name="firstname" >
+Last Name: <input type="text" name="lastname" >
+<br>
+Which city in Michigan would you like to start in?
+<br>
+<input type="text" name="location">
+<br>
+How many people are apart of your team?
+<input type="number" name="employees" value="1">
+<input class="btn btn-primary" type="submit" value="Next">
+</form>
+</div>
+</head>
+<body>
+	<br>
+	<br>
 
 	<footer>
 		The Ghostbusters and all associated images are owned by Sony Pictures
