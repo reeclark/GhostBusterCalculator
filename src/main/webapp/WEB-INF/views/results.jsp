@@ -11,17 +11,42 @@
 <body>
 <h1></h1><br>
 <a class="btn btn-custom" href="/">Home</a>
-
-
 <br><br>
 
-	<div class="container">
-		<h4>First Name: ${userStuff.firstname } Last Name: ${userStuff.lastname }</h4><br><br>
-		<h4>Starting City: ${userStuff.location } Number of Employees: ${userStuff.employees }</h4><br><br>
-		<h4>Equipment Cost: ${userStuff.equipmentcost }</h4><br><br>
+<div  class="test">
+	<p> This is a test</p>
+</div>
+	
+<h2>Ghostbusters Franchise Business Plan Proposal</h2>
+
+		<h4>${userStuff.firstname } ${userStuff.lastname }</h4><br>
+		<p>Owner</p><br><br>
+		<h4>Starting City:  Number of Employees: ${userStuff.employees }</h4><br><br>
+		<h5>Summary</h5><br>
+		<p>Ghostbusters of ${userStuff.location }, will be the first franchise of the Ghostbusters brand in Michigan;
+		utilizing existing technology, and capturing methods, to make Michigan a more living-person friendly environment. </p><br><br>
+		<h5>Description</h5><br>
+		<p>Ghostbusters of ${userStuff.location } will provide paranormal elimination services to all of Michigan.</P><br><br>
+		<h5>Goal</h5><br>
+		<p>Using the technology, and methods, developed by the Ghostbusters' founders in 1984, this new franchise will 
+		provide the same reliable and timely service that has been a defining characteristic of the Ghostbusters for over 
+		30 years.</p><br><br>
+		<h5>Initial 1st Year Costs</h5><br>
+		<div class="grid-container-custom">
+			<div class="grid-item-custom">
+				<p>Equipment Cost</p>
+			</div>
+		</div>
+		<div class="grid-container-custom">
+			<div class="grid-item-custom">
+				${userStuff.equipmentcost }
+			</div>
+		</div>
+		<h4>Equipment Cost: </h4><br><br>
 		<h4>Vehicle Cost: ${userStuff.vehiclecost }</h4><br><br>
 		<h4>Total Starting Cost: ${userStuff.total }</h4><br><br>
-	</div>
+		
+		
 
 
 <footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>
