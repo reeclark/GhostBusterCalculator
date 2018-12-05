@@ -112,7 +112,16 @@ public class GhostBusterController {
 			
 		}
 		
-		userPermanent.setVehiclecost(total);;
+		userPermanent.setVehiclecost(total);
+		u.save(userPermanent);
+		
+		Float vehicleCost = userPermanent.getVehiclecost();
+		Float equipmentCost = userPermanent.getEquipmentcost();
+		Float totalCost = vehicleCost + equipmentCost;
+		
+		userPermanent.setTotal(totalCost);
+		
+		
 		u.save(userPermanent);
 
 		return new ModelAndView("redirect:/results");
@@ -141,6 +150,8 @@ public class GhostBusterController {
 			ghostAvg = y / gD.size();
 
 		}
+		
+		
 
 		mv.addObject("ghost", ghostAvg);
 		mv.addObject("userStuff", userPermanent);

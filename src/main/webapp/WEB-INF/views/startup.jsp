@@ -28,7 +28,7 @@
 			Last Name: <input type="text" name="lastname"> <br> 
 			Which city in Michigan would you like to start in? <br> <input type="text" name="location"> <br> 
 			How many people are apart of your team? <input type="number" name="employees" value="1"> 
-			<input class="btn btn-primary" type="submit" value="Next">
+			<input class="btn btn-custom" type="submit" value="Next">
 		</form>
 	</div>
 </head>

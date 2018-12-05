@@ -14,14 +14,14 @@
 
 
 <br><br>
-${userStuff.firstname }
 
-${userStuff.lastname }
-${userStuff.equipmentcost }
-${userStuff.vehiclecost }
-${userStuff.total }
-${userStuff.location }
-${userStuff.employees }
+	<div class="container">
+		<h4>First Name: ${userStuff.firstname } Last Name: ${userStuff.lastname }</h4><br><br>
+		<h4>Starting City: ${userStuff.location } Number of Employees: ${userStuff.employees }</h4><br><br>
+		<h4>Equipment Cost: ${userStuff.equipmentcost }</h4><br><br>
+		<h4>Vehicle Cost: ${userStuff.vehiclecost }</h4><br><br>
+		<h4>Total Starting Cost: ${userStuff.total }</h4><br><br>
+	</div>
 
 
 <footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>

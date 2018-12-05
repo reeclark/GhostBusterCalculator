@@ -15,7 +15,7 @@
 <a class="btn btn-custom" href="/">Home</a> <a class="btn btn-custom" href="about">About</a> <a class="btn btn-custom" href="equipment">Back to Equipment</a><br><br>
 <h2>Vehicle</h2><br><br>
 <p>Now that you've selected the gear you'll need, it's time to pick a vehicle. Hey, a Ghostbuster needs a way to get around!
-Select a vehicle that you feel will satisfy your needs (and budget). Painting and outfitting your new spiritual speedster
+Select a vehicle, or vehicles, that you feel will satisfy your needs (and budget). Painting and outfitting your new spiritual speedster
 must remain within Ghostbuster corporate standards, so these fees will be automatically added to your selection.</p><br>
 
 <div class="container">
@@ -27,7 +27,8 @@ must remain within Ghostbuster corporate standards, so these fees will be automa
 					<td>${v.vehiclename}</td>
 					<td>${v.description}</td>
 					<td>${v.price}<input type="hidden" name="price" value="${v.price }"></td>
-					<td><input type="number" name="quantity"></td>
+					<td><img src="${v.image }" width="175" height="175"></td>
+					<td><input type="number" name="quantity" value="0"></td>
 				</tr>
 			</c:forEach>
 		</table>

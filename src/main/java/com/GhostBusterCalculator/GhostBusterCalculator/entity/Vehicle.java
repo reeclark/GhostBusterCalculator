@@ -15,6 +15,7 @@ public class Vehicle {
 	private String vehiclename;
 	private String description;
 	private float price;
+	private String image;
 	public Vehicle() {
 		// TODO Auto-generated constructor stub
 	}
@@ -29,6 +30,15 @@ public class Vehicle {
 		this.vehiclename = vehiclename;
 		this.description = description;
 		this.price = price;
+	}
+	
+	public Vehicle(Integer vehicleid, String vehiclename, String description, float price, String image) {
+		super();
+		this.vehicleid = vehicleid;
+		this.vehiclename = vehiclename;
+		this.description = description;
+		this.price = price;
+		this.image = image;
 	}
 	public Integer getVehicleid() {
 		return vehicleid;
@@ -53,6 +63,13 @@ public class Vehicle {
 	}
 	public void setPrice(float price) {
 		this.price = price;
+	}
+	
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
 	}
 	@Override
 	public String toString() {
