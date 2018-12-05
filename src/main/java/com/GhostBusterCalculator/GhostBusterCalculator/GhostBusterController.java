@@ -151,11 +151,16 @@ public class GhostBusterController {
 
 		}
 		
+		float estimatedRevenue = (float) ((ghostAvg * 5000) * .50);
+		float yearsToProfit = (userPermanent.getTotal() / estimatedRevenue);
 		
-
+		mv.addObject("profit", yearsToProfit);
+		mv.addObject("revenue", estimatedRevenue);
 		mv.addObject("ghost", ghostAvg);
 		mv.addObject("userStuff", userPermanent);
 		return mv;
 	}
+	
+	
 
 }

@@ -15,7 +15,7 @@
 <a class="btn btn-custom" href="about">About</a><br><br>
 <h2>Welcome to the Ghostbusters Franchise Calculator!</h2><br><br>
 
-<p>The Ghostbusters have decided to start franchising! This program is designed to help you
+<p class="custom-p">The Ghostbusters have decided to start franchising! This program is designed to help you
 customize your own franchise business plan to present to your local financial institution for a (totally reasonable
 and not at all regrettable) loan! Hey, if you want to be able to start busting ghosts, you're gonna need a
 load of bread to capitalize! What, you thought the Ghostbusters were going to finance you? If you want to be a

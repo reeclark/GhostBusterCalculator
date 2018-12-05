@@ -15,7 +15,7 @@
 <a class="btn btn-custom" href="/">Home</a> <a class="btn btn-custom" href="startup">Get Started!</a><br><br>
 <h2>About the Founders</h2><br><br>
 
-
+	<div class="container-custom">
 	<p>
 		The Ghostbusters were founded in New York City in 1984 by
 		parapsychologists Dr. Peter Venkman, Dr. Raymond Stanz, and Dr. Egon
@@ -39,7 +39,8 @@
 		who keeps a healthy skepticism while still pursuing the vaporous
 		apparitions plaguing the populous. He has remained with the
 		organization ever since.
-	</p>
+	</p><br>
+	</div>
 	<br>
 	<br>
 
