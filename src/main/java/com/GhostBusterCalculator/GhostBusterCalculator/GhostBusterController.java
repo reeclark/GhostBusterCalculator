@@ -19,6 +19,7 @@ import com.GhostBusterCalculator.GhostBusterCalculator.entity.Equipment;
 import com.GhostBusterCalculator.GhostBusterCalculator.entity.GhostData;
 import com.GhostBusterCalculator.GhostBusterCalculator.entity.GhostWrapper;
 import com.GhostBusterCalculator.GhostBusterCalculator.entity.User;
+import com.GhostBusterCalculator.GhostBusterCalculator.entity.Vehicle;
 
 @Controller
 public class GhostBusterController {
@@ -86,21 +87,35 @@ public class GhostBusterController {
 		userPermanent.setEquipmentcost(total);
 		u.save(userPermanent);
 
-		return new ModelAndView("redirect:/vehicles");
-	}
-
-	@RequestMapping("/vehicles")
-	public ModelAndView vehicleTest() {
-
-		return new ModelAndView("vehicle", "vehicle", v.findAll());
+		return new ModelAndView("redirect:/vehicle");
 	}
 
 	@RequestMapping("/vehicle")
-	public ModelAndView vehicle(@RequestParam("quantity") int num, @RequestParam("id") int itemId) {
-		Equipment test = e.findById(itemId).orElse(null);
-		System.out.println(test.getPrice() * num);
+	public ModelAndView pickVehicle() {
 
 		return new ModelAndView("vehicle", "vehicle", v.findAll());
+	}
+
+	@RequestMapping("/addvehicle")
+	public ModelAndView addVehicle(@RequestParam("price") Float price, @RequestParam("quantity") String quantity) {
+		String[] items = quantity.split(",");
+		System.out.println(Arrays.toString(items));
+		float total = 0;
+		for (int i = 0; i < items.length; i++) {
+			if (!items[i].equals("0")) {
+				int numItems = Integer.parseInt(items[i]);
+				Vehicle addVehicle = v.findById(i + 1).orElse(null);
+				Float vehiclecost = addVehicle.getPrice() * numItems;
+				System.out.println(addVehicle + " " + numItems + "  " + vehiclecost);
+				total += vehiclecost;
+			}
+			
+		}
+		
+		userPermanent.setVehiclecost(total);;
+		u.save(userPermanent);
+
+		return new ModelAndView("redirect:/results");
 	}
 
 //@RequestMapping("/vehicle")
@@ -116,7 +131,6 @@ public class GhostBusterController {
 				"https://api.usa.gov/crime/fbi/sapi/api/estimates/states/mi?api_key=" + crimeKey, GhostWrapper.class);
 
 		List<GhostData> gD = gW.getResults();
-		GhostData test = gD.get(0);
 		Integer y = 0;
 		Integer ghostAvg = 0;
 

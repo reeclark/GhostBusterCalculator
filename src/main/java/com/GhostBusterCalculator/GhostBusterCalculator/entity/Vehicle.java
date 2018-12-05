@@ -14,18 +14,18 @@ public class Vehicle {
 	private Integer vehicleid;
 	private String vehiclename;
 	private String description;
-	private int price;
+	private float price;
 	public Vehicle() {
 		// TODO Auto-generated constructor stub
 	}
-	public Vehicle(Integer id, String vehiclename, String description, int price) {
+	public Vehicle(Integer id, String vehiclename, String description, float price) {
 		this.vehicleid = id;
 		this.vehiclename = vehiclename;
 		this.description = description;
 		this.price = price;
 	}
 	
-	public Vehicle(String vehiclename, String description, int price) {
+	public Vehicle(String vehiclename, String description, float price) {
 		this.vehiclename = vehiclename;
 		this.description = description;
 		this.price = price;
@@ -48,10 +48,10 @@ public class Vehicle {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public int getPrice() {
+	public float getPrice() {
 		return price;
 	}
-	public void setPrice(int price) {
+	public void setPrice(float price) {
 		this.price = price;
 	}
 	@Override

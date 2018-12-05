@@ -21,7 +21,7 @@ public class User {
 	
 	private Float equipmentcost;
 
-	private Integer vehiclecost;
+	private Float vehiclecost;
 
 	private Float total;
 
@@ -33,7 +33,7 @@ public class User {
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(Integer userid, String firstname, String lastname, Float equipmentcost, Integer vehiclecost, Float total,
+	public User(Integer userid, String firstname, String lastname, Float equipmentcost, Float vehiclecost, Float total,
 			String location, Integer employees) {
 		this.userid = userid;
 		this.firstname = firstname;
@@ -45,7 +45,7 @@ public class User {
 		this.employees = employees;
 	}
 	
-	public User(String firstname, String lastname, Float equipmentcost, Integer vehiclecost, Float total,
+	public User(String firstname, String lastname, Float equipmentcost, Float vehiclecost, Float total,
 			String location, Integer employees) {
 		this.firstname = firstname;
 		this.lastname = lastname;
@@ -112,12 +112,12 @@ public class User {
 		this.equipmentcost = equipmentcost;
 	}
 
-	public Integer getVehiclecost() {
+	public Float getVehiclecost() {
 		return vehiclecost;
 	}
 
-	public void setVehiclecost(Integer vehiclecost) {
-		this.vehiclecost = vehiclecost;
+	public void setVehiclecost(Float total2) {
+		this.vehiclecost = total2;
 	}
 
 	public Float getTotal() {

@@ -13,15 +13,15 @@
 <a class="btn btn-custom" href="/">Home</a>
 
 
-<br>
-<h1>${userStuff.firstname }</h1>
+<br><br>
+${userStuff.firstname }
 
-<h1>${userStuff.lastname }</h1>
-<h1>${userStuff.equipmentcost }</h1>
-<h1>${userStuff.vehiclecost }</h1>
-<h1>${userStuff.total }</h1>
-<h1>${userStuff.location }</h1>
-<h1>${userStuff.employees }</h1>
+${userStuff.lastname }
+${userStuff.equipmentcost }
+${userStuff.vehiclecost }
+${userStuff.total }
+${userStuff.location }
+${userStuff.employees }
 
 
 <footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>

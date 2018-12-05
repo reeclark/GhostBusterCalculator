@@ -19,21 +19,24 @@ Select a vehicle that you feel will satisfy your needs (and budget). Painting an
 must remain within Ghostbuster corporate standards, so these fees will be automatically added to your selection.</p><br>
 
 <div class="container">
+	<form action="addvehicle" method="post">
 		<table class="table">
 			<c:forEach var="v" items="${vehicle}">
 				<tr>
 					<td>${v.vehicleid}</td>
 					<td>${v.vehiclename}</td>
 					<td>${v.description}</td>
-					<td>${v.price}</td>
-					<td><input type="number" name="quantity" value="1"></td>
+					<td>${v.price}<input type="hidden" name="price" value="${v.price }"></td>
+					<td><input type="number" name="quantity"></td>
 				</tr>
 			</c:forEach>
 		</table>
+		<input class="btn btn-custom" type="submit" value="Finish">
+	</form>
 </div><br><br>
 
 
-<input class="btn btn-custom" type="submit" value="Finish"><br><br>
+
 
 
 

@@ -16,9 +16,11 @@
 	<a class="btn btn-custom" href="about">About</a>
 	<br>
 	<br>
+	<h2>Getting Started</h2>
+	
+	<p>For starters, how about you tell us who you are, which city you're planning on opening in and
+	how many people you're going to have on your team?</p>
 	<div class="container">
-		number of deaths in Michigan over the past 23 years is: 652 <br>
-		75% of the deaths were turned into ghosts <br>
 
 
 		<form action="adduser" method="post" onsubmit="return validateInfo()">
