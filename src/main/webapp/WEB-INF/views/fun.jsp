@@ -8,6 +8,9 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" />
 <link rel="stylesheet" href="style.css">
+<link rel="icon" 
+      type="image/png" 
+      href="https://vignette.wikia.nocookie.net/someordinarygamers/images/2/28/Ghostbusters-logo-1024x819.jpg/revision/latest?cb=20141104164616">
 </head>
 <body>
 	<a class="btn btn-custom" href="/">Home</a>
@@ -33,7 +36,6 @@
 
 	<audio controls autoplay loop>
 		<source src="ghost.mp3" type="audio/ogg">
-
 	</audio>
 </body>
 </html>

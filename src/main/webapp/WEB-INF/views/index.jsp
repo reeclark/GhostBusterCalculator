@@ -9,6 +9,7 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css">
 <link rel="stylesheet" href="main.css">
+<link rel="icon" type="image/png" href="gblogo.jpg">
 </head>
 <body>
 

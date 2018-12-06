@@ -9,6 +9,7 @@ body {
 }
 
 .btn-custom {
+
     background-image: url(https://media.giphy.com/media/un3NNBF4LSJZ6/giphy.gif);
     color: white;
     font-size: 30px;
@@ -115,5 +116,9 @@ table {
     background-color: black;
     color: black;
     font-size: 22px;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 9727d637257df8b72fd8633ed652d90b6000671e
