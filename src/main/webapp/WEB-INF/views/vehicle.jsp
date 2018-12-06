@@ -14,11 +14,13 @@
 <h1></h1><br>
 <a class="btn btn-custom" href="/">Home</a> <a class="btn btn-custom" href="about">About</a> <a class="btn btn-custom" href="equipment">Back to Equipment</a><br><br>
 <h2>Vehicle</h2><br><br>
+<div class="container-custom">
 <p>Now that you've selected the gear you'll need, it's time to pick a vehicle. Hey, a Ghostbuster needs a way to get around!
 Select a vehicle, or vehicles, that you feel will satisfy your needs (and budget). Painting and outfitting your new spiritual speedster
 must remain within Ghostbuster corporate standards, so these fees will be automatically added to your selection.</p><br>
 
-<div class="container">
+
+
 	<form action="addvehicle" method="post">
 		<table class="table">
 			<c:forEach var="v" items="${vehicle}">
@@ -31,10 +33,10 @@ must remain within Ghostbuster corporate standards, so these fees will be automa
 					<td><input type="number" name="quantity" value="0"></td>
 				</tr>
 			</c:forEach>
-		</table>
+		</table></div><br><br>
 		<input class="btn btn-custom" type="submit" value="Finish">
 	</form>
-</div><br><br>
+<br><br>
 
 
 

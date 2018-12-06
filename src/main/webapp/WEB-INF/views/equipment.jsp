@@ -15,16 +15,10 @@
 	<h1></h1>
 	<br>
 
-
-
-
-	<div class="container">
-
-
 		<h2>Equipment</h2>
 		<br>
 		<br>
-
+<div class="container-custom"><br>
 
 		<p>First, you're going to need some equipment. You can't just yell
 			"Get Her!" and try to grab the ghost with your bare hands. You need some highly
@@ -58,11 +52,11 @@
 					</tr>
 				</tbody>	
 				</c:forEach>
-			</table><br><br>
-			
+			</table><br>
+			</div><br>
 				<input class="btn btn-custom" type="submit" value="Vehicle Selection">
 			</form>
-	</div>
+	
 	<br>
 	<br>
 
