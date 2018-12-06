@@ -5,19 +5,17 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="states")
+@Table(name = "states")
 public class States {
-	
+
 	@Id
 	private Integer stateid;
 	private String statename;
 	private String stateabv;
-	
+
 	public States() {
-		
+
 	}
-	
-	
 
 	public States(String stateabv) {
 		super();
@@ -37,49 +35,33 @@ public class States {
 		this.stateabv = stateabv;
 	}
 
-
-
 	public Integer getStateid() {
 		return stateid;
 	}
-
-
 
 	public void setStateid(Integer stateid) {
 		this.stateid = stateid;
 	}
 
-
-
 	public String getStatename() {
 		return statename;
 	}
-
-
 
 	public void setStatename(String statename) {
 		this.statename = statename;
 	}
 
-
-
 	public String getStateabv() {
 		return stateabv;
 	}
 
-
-
 	public void setStateabv(String stateabv) {
 		this.stateabv = stateabv;
 	}
-
-
 
 	@Override
 	public String toString() {
 		return "States [stateid=" + stateid + ", statename=" + statename + ", stateabv=" + stateabv + "]";
 	}
 
-	
-	
 }

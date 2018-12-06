@@ -15,18 +15,18 @@
 	<h1></h1>
 	<br>
 
-		<h2>Equipment</h2>
+	<h2>Equipment</h2>
+	<br>
+	<br>
+	<div class="container-custom">
 		<br>
-		<br>
-<div class="container-custom"><br>
 
 		<p>First, you're going to need some equipment. You can't just yell
-			"Get Her!" and try to grab the ghost with your bare hands. You need some highly
-			specialized (and 100%, totally legal) gear. Below is a simple form to
-			help you select how much equipment you'll need to get your team
-			started.</p>
-		<br>
-		<br>
+			"Get Her!" and try to grab the ghost with your bare hands. You need
+			some highly specialized (and 100%, totally legal) gear. Below is a
+			simple form to help you select how much equipment you'll need to get
+			your team started.</p>
+		<br> <br>
 
 
 		<form action="addequipment" method="post">
@@ -41,22 +41,25 @@
 					<th>Quantity</th>
 				</thead>
 				<c:forEach var="e" items="${equipment}">
-				<tbody>
-					<tr>
-						<td>${e.id}</td>
-						<td>${e.item}</td>
-						<td>${e.description}</td>
-						<td>$ ${e.formattedPrice}<input type="hidden" name="price" value="${e.price }"></td>
-						<td><img src="${e.image }" width="115" height="165"></td>
-						<td><input type="number" name="quantity" value="0"></td>
-					</tr>
-				</tbody>	
+					<tbody>
+						<tr>
+							<td>${e.id}</td>
+							<td>${e.item}</td>
+							<td>${e.description}</td>
+							<td>$ ${e.formattedPrice}<input type="hidden" name="price"
+								value="${e.price }"></td>
+							<td><img src="${e.image }" width="115" height="165"></td>
+							<td><input type="number" name="quantity" value="0"></td>
+						</tr>
+					</tbody>
 				</c:forEach>
-			</table><br>
-			</div><br>
-				<input class="btn btn-custom" type="submit" value="Vehicle Selection">
-			</form>
-	
+			</table>
+			<br>
+	</div>
+	<br>
+	<input class="btn btn-custom" type="submit" value="Vehicle Selection">
+	</form>
+
 	<br>
 	<br>
 
