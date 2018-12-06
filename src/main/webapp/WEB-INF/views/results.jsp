@@ -56,7 +56,16 @@
 		%0D
 		Vehicle Cost:%09${userStuff.vehiclecost }%0D
 		%0D
-		Total Starting Cost:%09${userStuff.total }%0D" class="btn btn-custom">Email Me My Summary</a>
+		Total Starting Cost:%09${userStuff.total }%0D
+		%0D
+		Estimated Yearly Revenue:%0D
+		%0D
+			Average Ghosts Per Year (based on 100% of homicides becoming ghosts):%09${ghost }%0D
+			Price of Capturing Ghost:%09$5000.00%0D
+			Estimated capture rate is%0950%.%0D
+			Total Estimated Annual Revenue: $ ${revenue }%0D
+			%0D
+		The estimated time it will take for the franchise to earn back the initial startup cost is:%09${profit }" class="btn btn-custom">Email Me My Summary</a>
 
 
 </div><br><br><br>
