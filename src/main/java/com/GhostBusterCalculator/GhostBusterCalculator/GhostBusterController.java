@@ -146,8 +146,7 @@ public class GhostBusterController {
 	public ModelAndView getGhostData() {
 		ModelAndView mv = new ModelAndView("results");
 		RestTemplate rt = new RestTemplate();
-		GhostWrapper gW = rt.getForObject("https://api.usa.gov/crime/fbi/sapi/api/estimates/states/"
-				+ userPermanent.getLocation() + "?api_key=" + crimeKey, GhostWrapper.class);
+		GhostWrapper gW = rt.getForObject("https://api.usa.gov/crime/fbi/sapi/api/estimates/states/" + userPermanent.getLocation() + "?api_key=" + crimeKey, GhostWrapper.class);
 
 		List<GhostData> gD = gW.getResults();
 		Integer y = 0;

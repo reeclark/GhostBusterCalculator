@@ -31,7 +31,6 @@
 
 
 		<form action="adduser" method="post" onsubmit="return validateInfo()">
-<<<<<<< HEAD
 			<p>First Name: <input type="text" name="firstname"> 
 			Last Name: <input type="text" name="lastname"> </p>
 			<p>What's your email?: <input type="text" name="email"></p><br> 
@@ -47,31 +46,8 @@
 			<br></div><br><br>
 			<input class="btn btn-custom" type="submit" value="Next">
 		</form>
-=======
-			<p>
-				First Name: <input type="text" name="firstname"> Last Name:
-				<input type="text" name="lastname">
-			</p>
-			<br>
-			<p>
-				Where are you going to be located? <select name="states">
-					<c:forEach items="${states}" var="s">
-						<option value="${s.stateabv},${s.statename }">${s.statename }</option>
-					</c:forEach>
-				</select>
-			</p>
-			<br>
-			<p>
-				How many people are on your team? <input type="number"
-					name="employees" value="1">
-			</p>
-			<br>
-	</div>
-	<br>
-	<br>
-	<input class="btn btn-custom" type="submit" value="Next">
-	</form>
->>>>>>> 77e215e049d24e8f98012d20e470cff5176c42fa
+
+
 
 
 	<br>

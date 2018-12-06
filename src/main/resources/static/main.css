@@ -9,7 +9,7 @@ body {
 }
 
 .btn-custom {
-    background-color: #00D639;
+    background-image: url(https://media.giphy.com/media/un3NNBF4LSJZ6/giphy.gif);
     color: white;
     font-size: 30px;
     text-shadow: 2px 2px black;
@@ -25,8 +25,6 @@ body {
     padding: 7px;
     text-align: left;
 }
-
-.container-ghost {}
 
 .custom-p {
     background-color: rgb(0, 125, 0, 0.4);
@@ -119,6 +117,3 @@ table {
     font-size: 22px;
 }
 
-.test {
-    background-color: rgb(0, 125, 0, 0.5);
-}
