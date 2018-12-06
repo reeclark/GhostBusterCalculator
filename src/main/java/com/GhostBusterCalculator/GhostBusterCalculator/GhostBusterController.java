@@ -48,6 +48,11 @@ public class GhostBusterController {
 	public ModelAndView about() {
 		return new ModelAndView("about");
 	}
+	
+	@RequestMapping("/fun")
+	public ModelAndView fun(){
+		return new ModelAndView("fun");
+	}
 
 	@RequestMapping("/startup")
 	public ModelAndView startup() {
@@ -56,10 +61,10 @@ public class GhostBusterController {
 
 	@RequestMapping("/adduser")
 	public ModelAndView registerUser(@RequestParam("firstname") String firstname,
-			@RequestParam("lastname") String lastname, @RequestParam("employees") Integer employees, @RequestParam("states")String state) {
+			@RequestParam("lastname") String lastname, @RequestParam("email")String email, @RequestParam("employees") Integer employees, @RequestParam("states")String state) {
 		
 		String[] splitState = state.split(",");
-		userPermanent = new User(firstname, lastname, splitState[1], splitState[0], employees);
+		userPermanent = new User(firstname, lastname, email, splitState[1], splitState[0], employees);
 		u.save(userPermanent);
 		return new ModelAndView("redirect:/equipment");
 
@@ -164,9 +169,6 @@ public class GhostBusterController {
 		return mv;
 	}
 	
-	@RequestMapping("/fun")
-	public ModelAndView fun(){
-		return new ModelAndView("fun");
-	}
+
 
 }

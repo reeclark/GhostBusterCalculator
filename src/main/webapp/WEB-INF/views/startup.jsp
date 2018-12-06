@@ -15,6 +15,7 @@
 	<br>
 	<a class="btn btn-custom" href="/">Home</a>
 	<a class="btn btn-custom" href="about">About</a>
+	<a class="btn btn-custom" href="/fun">Fun</a>
 	<br>
 	<br>
 	<h2>Getting Started</h2><br><br>
@@ -28,7 +29,8 @@
 
 		<form action="adduser" method="post" onsubmit="return validateInfo()">
 			<p>First Name: <input type="text" name="firstname"> 
-			Last Name: <input type="text" name="lastname"> </p><br> 
+			Last Name: <input type="text" name="lastname"> </p>
+			<p>What's your email?: <input type="text" name="email"></p><br> 
 			<p>Where are you going to be located? 
 			
 			 <select name="states">

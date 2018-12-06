@@ -19,6 +19,8 @@ public class User {
 	
 	private String lastname;
 	
+	private String email;
+	
 	private Float equipmentcost;
 
 	private Float vehiclecost;
@@ -72,10 +74,11 @@ public class User {
 		this.employees = employees;
 	}
 	
-	public User(String firstname, String lastname, String state, String location, Integer employees) {
+	public User(String firstname, String lastname, String email, String state, String location, Integer employees) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
+		this.email=email;
 		this.state = state;
 		this.location = location;
 		this.employees = employees;
@@ -129,6 +132,14 @@ public class User {
 		this.lastname = lastname;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public Float getEquipmentcost() {
 		return equipmentcost;
 	}
@@ -176,13 +187,26 @@ public class User {
 	public void setState(String state) {
 		this.state = state;
 	}
+	
+	public String getFormattedVehicleCost() {
+		return String.format("%.2f", getVehiclecost());
+	}
+	
+	public String getFormattedEquipCost() {
+		return String.format("%.2f", getEquipmentcost());
+	}
+	
+	public String getFormattedTotal() {
+		return String.format("%.2f", getTotal());
+	}
 
 	@Override
 	public String toString() {
-		return "User [userid=" + userid + ", firstname=" + firstname + ", lastname=" + lastname + ", equipmentcost="
-				+ equipmentcost + ", vehiclecost=" + vehiclecost + ", total=" + total + ", state=" + state
-				+ ", location=" + location + ", employees=" + employees + "]";
+		return "User [userid=" + userid + ", firstname=" + firstname + ", lastname=" + lastname + ", email=" + email
+				+ ", equipmentcost=" + equipmentcost + ", vehiclecost=" + vehiclecost + ", total=" + total + ", state="
+				+ state + ", location=" + location + ", employees=" + employees + "]";
 	}
+
 	
 	
 

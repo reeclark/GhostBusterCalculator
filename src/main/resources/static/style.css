@@ -9,7 +9,11 @@ html, body {
 }
 
 body {
-  background: #006400;
+background-attachment: fixed;
+    background-color: black;
+    background-image: url(https://orig00.deviantart.net/e2ef/f/2012/042/4/e/ghostbusters_wallpaper_dark_by_reaper_tranter-d4pfi9l.png);
+    background-position: center;
+    background-size: auto;
 }
 
 #container {

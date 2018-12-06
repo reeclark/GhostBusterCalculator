@@ -40,15 +40,19 @@ body {
 }
 
 footer {
+    
+    background-color: #042600;
     border: solid;
     border: 2px;
     border-color: darkgrey;
-    background-color: #042600;
+    bottom: 0;
     color: white;
+    left: 0;
     font-size: 15px;
     padding: 20px;
     text-align: center;
     text-shadow: 3px 2px black;
+    width: 100%;
 }
 
 .grid-container {
