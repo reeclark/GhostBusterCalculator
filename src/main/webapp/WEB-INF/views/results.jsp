@@ -23,6 +23,15 @@
 		<h4>Total Starting Cost: ${userStuff.total }</h4><br><br>
 	</div>
 
+<a href="mailto:?subject=Ghostbuster Calculator Result&body=First Name:%09${userStuff.firstname }%0D%0DLast Name:%09${userStuff.lastname }%0D
+		%0D
+		Starting City:%09${userStuff.location }%0D%0DNumber of Employees:%09${userStuff.employees }%0D
+		%0D
+		Equipment Cost:%09${userStuff.equipmentcost }%0D
+		%0D
+		Vehicle Cost:%09${userStuff.vehiclecost }%0D
+		%0D
+		Total Starting Cost:%09${userStuff.total }%0D" class="btn btn-custom">Email Me My Summary</a> 
 
 <footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>
  Any use of associated images, characters and references in no way imply that we own or have licensed these images for financial gain. This is<br>
