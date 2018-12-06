@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,12 +29,19 @@
 		<form action="adduser" method="post" onsubmit="return validateInfo()">
 			<p>First Name: <input type="text" name="firstname"> 
 			Last Name: <input type="text" name="lastname"> </p><br> 
-			<p>Which city in Michigan would you like to start in?  <input type="text" name="location"> </p><br> 
+			<p>Which city in Michigan would you like to start in? </p>
+			
+			 <select name="states">
+				<c:forEach items="${states}" var="s">
+					<option value="${s.stateabv}">${s.statename }</option>
+				</c:forEach> 
+			</select> 	
+			
 			<p>How many people are on your team? <input type="number" name="employees" value="1"> </p>
-			</div><br>
+			<br>
 			<input class="btn btn-custom" type="submit" value="Next">
 		</form>
-
+</div>
 
 	<br>
 	<br>
