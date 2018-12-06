@@ -30,5 +30,7 @@ ${ghost}
  Any use of associated images, characters and references in no way imply that we own or have licensed these images for financial gain. This is<br>
  a parody only. DON'T SUE US OVER A SILLY PROJECT....please!?</footer>
 
+s
+
 </body>
 </html>

@@ -25,5 +25,11 @@ ${fun }
 
     
 <script  src="index.js"></script>
+
+
+<audio controls autoplay loop>
+<source src="ghost.mp3" type="audio/ogg">
+
+</audio>
 </body>
 </html>
