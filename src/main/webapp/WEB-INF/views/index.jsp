@@ -12,7 +12,7 @@
 <body>
 
 <h1></h1><br>
-<a class="btn btn-custom" href="about">About</a><br><br>
+<a class="btn btn-custom" href="about">About</a> <a class="btn btn-custom" href="/fun">Fun</a> <br><br>
 <h2>Welcome to the Ghostbusters Franchise Calculator!</h2><br><br>
 
 <p class="custom-p">The Ghostbusters have decided to start franchising! This program is designed to help you

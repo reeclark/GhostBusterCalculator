@@ -56,11 +56,11 @@ public class GhostBusterController {
 
 	@RequestMapping("/adduser")
 	public ModelAndView registerUser(@RequestParam("firstname") String firstname,
-			@RequestParam("lastname") String lastname,
-			@RequestParam("employees") Integer employees, @RequestParam("states") String states) {
-		userPermanent = new User(firstname, lastname, states, employees);
+			@RequestParam("lastname") String lastname, @RequestParam("employees") Integer employees, @RequestParam("states")String state) {
+		
+		String[] splitState = state.split(",");
+		userPermanent = new User(firstname, lastname, splitState[1], splitState[0], employees);
 		u.save(userPermanent);
-		System.out.println(states);
 		return new ModelAndView("redirect:/equipment");
 
 	}

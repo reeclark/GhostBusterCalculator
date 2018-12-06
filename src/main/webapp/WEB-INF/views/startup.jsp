@@ -20,7 +20,7 @@
 	<h2>Getting Started</h2><br><br>
 	
 <div class="container-custom">
-	<p>For starters, how about you tell us who you are, which city you're planning on opening in and
+	<p>For starters, how about you tell us who you are, which state you're planning on opening in and
 	how many people you're going to have on your team?</p>
 
 
@@ -29,19 +29,19 @@
 		<form action="adduser" method="post" onsubmit="return validateInfo()">
 			<p>First Name: <input type="text" name="firstname"> 
 			Last Name: <input type="text" name="lastname"> </p><br> 
-			<p>Which city in Michigan would you like to start in? </p>
+			<p>Where are you going to be located? 
 			
 			 <select name="states">
 				<c:forEach items="${states}" var="s">
-					<option value="${s.stateabv}">${s.statename }</option>
+					<option value="${s.stateabv},${s.statename }">${s.statename }</option>
 				</c:forEach> 
 			</select> 	
-			
+			</p><br>
 			<p>How many people are on your team? <input type="number" name="employees" value="1"> </p>
-			<br>
+			<br></div><br><br>
 			<input class="btn btn-custom" type="submit" value="Next">
 		</form>
-</div>
+
 
 	<br>
 	<br>
