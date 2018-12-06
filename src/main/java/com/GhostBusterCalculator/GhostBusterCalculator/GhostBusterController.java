@@ -90,9 +90,9 @@ public class GhostBusterController {
 				System.out.println(addEquipment + " " + numItems + "  " + equipmentcost);
 				total += equipmentcost;
 			}
-			
+
 		}
-		
+
 		userPermanent.setEquipmentcost(total);
 		u.save(userPermanent);
 
@@ -118,28 +118,22 @@ public class GhostBusterController {
 				System.out.println(addVehicle + " " + numItems + "  " + vehiclecost);
 				total += vehiclecost;
 			}
-			
+
 		}
-		
+
 		userPermanent.setVehiclecost(total);
 		u.save(userPermanent);
-		
+
 		Float vehicleCost = userPermanent.getVehiclecost();
 		Float equipmentCost = userPermanent.getEquipmentcost();
 		Float totalCost = vehicleCost + equipmentCost;
-		
+
 		userPermanent.setTotal(totalCost);
-		
-		
+
 		u.save(userPermanent);
 
 		return new ModelAndView("redirect:/results");
 	}
-
-//@RequestMapping("/vehicle")
-//public ModelAndView vehicle() {
-//	return new ModelAndView("vehicle", "vehicle", v.findAll());
-//}
 
 	@RequestMapping("/results")
 	public ModelAndView getGhostData() {
@@ -159,10 +153,10 @@ public class GhostBusterController {
 			ghostAvg = y / gD.size();
 
 		}
-		
+
 		float estimatedRevenue = (float) ((ghostAvg * 5000) * .50);
 		float yearsToProfit = (userPermanent.getTotal() / estimatedRevenue);
-		
+
 		mv.addObject("profit", yearsToProfit);
 		mv.addObject("revenue", estimatedRevenue);
 		mv.addObject("ghost", ghostAvg);
@@ -170,6 +164,9 @@ public class GhostBusterController {
 		return mv;
 	}
 	
-	
+	@RequestMapping("/fun")
+	public ModelAndView fun(){
+		return new ModelAndView("fun");
+	}
 
 }
