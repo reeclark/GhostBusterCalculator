@@ -16,10 +16,9 @@ ${fun }
 <div id="container">
 	
 <svg id="svg"></svg>
-
 </div>
   
-<script src='zbvakw.js'></script>
+<script src='team.js'></script>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js'></script>
 
