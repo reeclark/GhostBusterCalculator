@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.GhostBusterCalculator.GhostBusterCalculator.Repository.EquipmentRepository;
+import com.GhostBusterCalculator.GhostBusterCalculator.Repository.StatesRepository;
 import com.GhostBusterCalculator.GhostBusterCalculator.Repository.UserRepository;
 import com.GhostBusterCalculator.GhostBusterCalculator.Repository.VehicleRepository;
 import com.GhostBusterCalculator.GhostBusterCalculator.entity.Equipment;
@@ -33,6 +34,8 @@ public class GhostBusterController {
 	UserRepository u;
 	@Autowired
 	EquipmentRepository e;
+	@Autowired
+	StatesRepository s;
 
 	private User userPermanent;
 
@@ -48,17 +51,23 @@ public class GhostBusterController {
 
 	@RequestMapping("/startup")
 	public ModelAndView startup() {
-		return new ModelAndView("startup", "startup", "");
+		return new ModelAndView("startup", "states", s.findAll());
 	}
 
 	@RequestMapping("/adduser")
 	public ModelAndView registerUser(@RequestParam("firstname") String firstname,
-			@RequestParam("lastname") String lastname, @RequestParam("location") String location,
-			@RequestParam("employees") Integer employees) {
-		userPermanent = new User(firstname, lastname, location, employees);
+			@RequestParam("lastname") String lastname,
+			@RequestParam("employees") Integer employees, @RequestParam("states") String states) {
+		userPermanent = new User(firstname, lastname, states, employees);
 		u.save(userPermanent);
+		System.out.println(states);
 		return new ModelAndView("redirect:/equipment");
 
+	}
+	
+	@RequestMapping("/getstate")
+	public ModelAndView getStates() {
+		return new ModelAndView("states", "states", s.findAll());
 	}
 
 	@RequestMapping("/equipment")
@@ -131,7 +140,7 @@ public class GhostBusterController {
 		ModelAndView mv = new ModelAndView("results");
 		RestTemplate rt = new RestTemplate();
 		GhostWrapper gW = rt.getForObject(
-				"https://api.usa.gov/crime/fbi/sapi/api/estimates/states/mi?api_key=" + crimeKey, GhostWrapper.class);
+				"https://api.usa.gov/crime/fbi/sapi/api/estimates/states/" + userPermanent.getLocation() + "?api_key=" + crimeKey, GhostWrapper.class);
 
 		List<GhostData> gD = gW.getResults();
 		Integer y = 0;
