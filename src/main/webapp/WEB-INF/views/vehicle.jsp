@@ -28,7 +28,7 @@ must remain within Ghostbuster corporate standards, so these fees will be automa
 					<td>${v.vehicleid}</td>
 					<td>${v.vehiclename}</td>
 					<td>${v.description}</td>
-					<td>${v.price}<input type="hidden" name="price" value="${v.price }"></td>
+					<td>$ ${v.formattedPrice}<input type="hidden" name="price" value="${v.price }"></td>
 					<td><img src="${v.image }" width="175" height="175"></td>
 					<td><input type="number" name="quantity" value="0"></td>
 				</tr>

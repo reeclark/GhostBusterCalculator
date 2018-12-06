@@ -19,7 +19,7 @@
 <div class="container-custom"><br>
 		<p>Owner: ${userStuff.firstname } ${userStuff.lastname }</p>
 		<br>
-		<p>Starting City: ${userStuff.location}</p><br>
+		<p>Starting Location: ${userStuff.state}</p><br>
 		<p>Number of Employees: ${userStuff.employees }</p><br><br>
 		<h5>Summary</h5><br>
 		<p>Ghostbusters of ${userStuff.location }, will be the first franchise of the Ghostbusters brand in Michigan.
@@ -35,9 +35,9 @@
 		30 years. Services will be provided 24/7 at a reasonable price.</p><br><br>
 		
 		<h5>Initial 1st Year Costs</h5><br><br>
-				<p>Equipment Cost: ${userStuff.equipmentcost }</p>
-				<p>Vehicle Cost: ${userStuff.vehiclecost }</p>
-				<p>Total Initial Cost: ${userStuff.total }<br><br>
+				<p>Equipment Cost: $ ${userStuff.equipmentcost }</p>
+				<p>Vehicle Cost: $ ${userStuff.vehiclecost }</p>
+				<p>Total Initial Cost: $ ${userStuff.total }<br><br>
 				
 		<h5>Estimated Yearly Revenue</h5><br><br>
 			<p>Average Ghosts Per Year (based on 100% of homicides becoming ghosts): ${ghost }</p>

@@ -24,6 +24,8 @@ public class User {
 	private Float vehiclecost;
 
 	private Float total;
+	
+	private String state;
 
 	private String location;
 
@@ -31,6 +33,20 @@ public class User {
 	
 	public User() {
 		// TODO Auto-generated constructor stub
+	}
+
+	public User(Integer userid, String firstname, String lastname, Float equipmentcost, Float vehiclecost, Float total,
+			String state, String location, Integer employees) {
+		super();
+		this.userid = userid;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.equipmentcost = equipmentcost;
+		this.vehiclecost = vehiclecost;
+		this.total = total;
+		this.state = state;
+		this.location = location;
+		this.employees = employees;
 	}
 
 	public User(Integer userid, String firstname, String lastname, Float equipmentcost, Float vehiclecost, Float total,
@@ -56,6 +72,15 @@ public class User {
 		this.employees = employees;
 	}
 	
+	public User(String firstname, String lastname, String state, String location, Integer employees) {
+		super();
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.state = state;
+		this.location = location;
+		this.employees = employees;
+	}
+
 	public User(Integer userid,String firstname, String lastname,
 			String location, Integer employees) {
 		this.userid = userid;
@@ -144,10 +169,21 @@ public class User {
 		this.employees = employees;
 	}
 
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
 	@Override
 	public String toString() {
 		return "User [userid=" + userid + ", firstname=" + firstname + ", lastname=" + lastname + ", equipmentcost="
-				+ equipmentcost + ", vehiclecost=" + vehiclecost + ", total=" + total + ", location=" + location
-				+ ", employees=" + employees + "]";
+				+ equipmentcost + ", vehiclecost=" + vehiclecost + ", total=" + total + ", state=" + state
+				+ ", location=" + location + ", employees=" + employees + "]";
 	}
+	
+	
+
 }

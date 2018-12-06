@@ -71,6 +71,11 @@ public class Vehicle {
 	public void setImage(String image) {
 		this.image = image;
 	}
+	
+	public String getFormattedPrice() {
+		return String.format("%.2f", getPrice());
+	}
+	
 	@Override
 	public String toString() {
 		return "Vehicle [id=" + vehicleid + ", vehiclename=" + vehiclename + ", description=" + description + ", price="

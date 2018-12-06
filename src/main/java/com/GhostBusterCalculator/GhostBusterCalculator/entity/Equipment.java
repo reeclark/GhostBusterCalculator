@@ -81,6 +81,9 @@ public class Equipment {
 		this.image = image;
 	}
 
+	public String getFormattedPrice() {
+		return String.format("%.2f", getPrice());
+	}
 
 
 	@Override
