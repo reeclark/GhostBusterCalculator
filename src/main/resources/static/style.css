@@ -16,9 +16,14 @@ body {
     background-image: url(https://orig00.deviantart.net/e2ef/f/2012/042/4/e/ghostbusters_wallpaper_dark_by_reaper_tranter-d4pfi9l.png);
     background-position: center;
     background-size: auto;
+	text-align: center;
+}
 
-    background: #006400;
-
+.btn-custom {
+    background-color: #00D639;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
 }
 
 #container {

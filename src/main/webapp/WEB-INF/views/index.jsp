@@ -48,7 +48,5 @@
 		PROJECT....please!?
 	</footer>
 
-	s
-
 </body>
 </html>
