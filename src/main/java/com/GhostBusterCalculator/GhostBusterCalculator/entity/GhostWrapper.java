@@ -6,11 +6,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GhostWrapper {
-	
+
 	private List<GhostData> results;
-	
+
 	public GhostWrapper() {
-		
+
 	}
 
 	public GhostWrapper(List<GhostData> results) {
@@ -30,7 +30,5 @@ public class GhostWrapper {
 	public String toString() {
 		return "GhostWrapper [results=" + results + "]";
 	}
-	
-	
 
 }

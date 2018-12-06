@@ -61,15 +61,17 @@ public class GhostBusterController {
 
 	@RequestMapping("/adduser")
 	public ModelAndView registerUser(@RequestParam("firstname") String firstname,
+
 			@RequestParam("lastname") String lastname, @RequestParam("email")String email, @RequestParam("employees") Integer employees, @RequestParam("states")String state) {
 		
+
 		String[] splitState = state.split(",");
 		userPermanent = new User(firstname, lastname, email, splitState[1], splitState[0], employees);
 		u.save(userPermanent);
 		return new ModelAndView("redirect:/equipment");
 
 	}
-	
+
 	@RequestMapping("/getstate")
 	public ModelAndView getStates() {
 		return new ModelAndView("states", "states", s.findAll());
@@ -144,8 +146,8 @@ public class GhostBusterController {
 	public ModelAndView getGhostData() {
 		ModelAndView mv = new ModelAndView("results");
 		RestTemplate rt = new RestTemplate();
-		GhostWrapper gW = rt.getForObject(
-				"https://api.usa.gov/crime/fbi/sapi/api/estimates/states/" + userPermanent.getLocation() + "?api_key=" + crimeKey, GhostWrapper.class);
+		GhostWrapper gW = rt.getForObject("https://api.usa.gov/crime/fbi/sapi/api/estimates/states/"
+				+ userPermanent.getLocation() + "?api_key=" + crimeKey, GhostWrapper.class);
 
 		List<GhostData> gD = gW.getResults();
 		Integer y = 0;
@@ -168,7 +170,5 @@ public class GhostBusterController {
 		mv.addObject("userStuff", userPermanent);
 		return mv;
 	}
-	
-
 
 }

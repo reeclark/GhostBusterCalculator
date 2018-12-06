@@ -1,17 +1,14 @@
 package com.GhostBusterCalculator.GhostBusterCalculator.entity;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GhostData {
-	
-	
+
 	private Integer homicide;
-	
+
 	public GhostData() {
-		
+
 	}
 
 	public GhostData(Integer homicide) {
@@ -31,7 +28,5 @@ public class GhostData {
 	public String toString() {
 		return "GhostData [homicide=" + homicide + "]";
 	}
-	
-	
 
 }

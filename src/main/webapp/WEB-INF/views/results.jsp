@@ -1,25 +1,33 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Results</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" />
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<h1></h1><br>
-<a class="btn btn-custom" href="/">Home</a> <a class="btn btn-custom" href="about">About</a>
-<br><br><br>
+	<h1></h1>
+	<br>
+	<a class="btn btn-custom" href="/">Home</a>
+	<a class="btn btn-custom" href="about">About</a>
+	<a class="btn btn-custom" href="/fun">Fun</a>
+	<br>
+	<br>
+	<br>
 
-	
-<h2>Ghostbusters Franchise Business Plan Proposal</h2><br>
- 
-<div class="container-custom"><br>
+
+	<h2>Ghostbusters Franchise Business Plan Proposal</h2>
+	<br>
+
+	<div class="container-custom">
+		<br>
 		<p>Owner: ${userStuff.firstname } ${userStuff.lastname }</p>
 		<br>
+
 		<p>Starting Location: ${userStuff.state}</p><br>
 		<p>Number of Employees: ${userStuff.employees }</p><br><br>
 		<h5>Summary</h5><br>
@@ -48,7 +56,7 @@
 		<h5>Profitability</h5>
 			<p>The estimated time it will take for the franchise to earn back the initial startup cost is: ${profit } years</p>
 			</div><br><br>
-			<a href="mailto:${userStuff.email }subject=Ghostbuster Calculator Result&body=First Name:%09${userStuff.firstname }%0D%0DLast Name:%09${userStuff.lastname }%0D
+	<a href="mailto:${userStuff.email }subject=Ghostbuster Calculator Result&body=First Name:%09${userStuff.firstname }%0D%0DLast Name:%09${userStuff.lastname }%0D
 		%0D
 		Starting City:%09${userStuff.location }%0D%0DNumber of Employees:%09${userStuff.employees }%0D
 		%0D
@@ -65,16 +73,27 @@
 			Estimated capture rate is%0950%.%0D
 			Total Estimated Annual Revenue: $ ${revenue }%0D
 			%0D
-		The estimated time it will take for the franchise to earn back the initial startup cost is:%09${profit }" class="btn btn-custom">Email Me My Summary</a>
+		The estimated time it will take for the franchise to earn back the initial startup cost is:%09${profit }"
+		class="btn btn-custom">Email Me My Summary</a>
 
 
-<br><br><br>
+	<br>
+	<br>
+	<br>
 
-<a class="btn btn-custom" href="/fun">Fun</a>
-</div><br><br><br>
 
-<footer>The Ghostbusters and all associated images are owned by Sony Pictures (©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>
- Any use of associated images, characters and references in no way imply that we own or have licensed these images for financial gain. This is<br>
- a parody only. DON'T SUE US OVER A SILLY PROJECT....please!?</footer>
+	
+	<br>
+	<br>
+	<br>
+
+	<footer>
+		The Ghostbusters and all associated images are owned by Sony Pictures
+		(©2018 SONY PICTURES DIGITAL PRODUCTIONS INC. ALL RIGHTS RESERVED).<br>
+		Any use of associated images, characters and references in no way
+		imply that we own or have licensed these images for financial gain.
+		This is<br> a parody only. DON'T SUE US OVER A SILLY
+		PROJECT....please!?
+	</footer>
 </body>
 </html>

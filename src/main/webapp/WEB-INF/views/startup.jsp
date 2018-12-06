@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,16 +18,20 @@
 	<a class="btn btn-custom" href="/fun">Fun</a>
 	<br>
 	<br>
-	<h2>Getting Started</h2><br><br>
-	
-<div class="container-custom">
-	<p>For starters, how about you tell us who you are, which state you're planning on opening in and
-	how many people you're going to have on your team?</p>
+	<h2>Getting Started</h2>
+	<br>
+	<br>
+
+	<div class="container-custom">
+		<p>For starters, how about you tell us who you are, which state
+			you're planning on opening in and how many people you're going to
+			have on your team?</p>
 
 
 
 
 		<form action="adduser" method="post" onsubmit="return validateInfo()">
+<<<<<<< HEAD
 			<p>First Name: <input type="text" name="firstname"> 
 			Last Name: <input type="text" name="lastname"> </p>
 			<p>What's your email?: <input type="text" name="email"></p><br> 
@@ -43,6 +47,31 @@
 			<br></div><br><br>
 			<input class="btn btn-custom" type="submit" value="Next">
 		</form>
+=======
+			<p>
+				First Name: <input type="text" name="firstname"> Last Name:
+				<input type="text" name="lastname">
+			</p>
+			<br>
+			<p>
+				Where are you going to be located? <select name="states">
+					<c:forEach items="${states}" var="s">
+						<option value="${s.stateabv},${s.statename }">${s.statename }</option>
+					</c:forEach>
+				</select>
+			</p>
+			<br>
+			<p>
+				How many people are on your team? <input type="number"
+					name="employees" value="1">
+			</p>
+			<br>
+	</div>
+	<br>
+	<br>
+	<input class="btn btn-custom" type="submit" value="Next">
+	</form>
+>>>>>>> 77e215e049d24e8f98012d20e470cff5176c42fa
 
 
 	<br>
