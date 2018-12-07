@@ -12,6 +12,7 @@
 <link rel="icon" 
       type="image/png" 
       href="https://vignette.wikia.nocookie.net/someordinarygamers/images/2/28/Ghostbusters-logo-1024x819.jpg/revision/latest?cb=20141104164616">
+      <script src="script.js"></script>
 </head>
 <body>
 	<h1></h1>
@@ -34,9 +35,9 @@
 
 
 		<form action="adduser" method="post" onsubmit="return validateInfo()">
-			<p>First Name: <input type="text" name="firstname"> 
-			Last Name: <input type="text" name="lastname"> </p>
-			<p>What's your email?: <input type="text" name="email"></p><br> 
+			<p>First Name: <input id="firstname" type="text" name="firstname" required> 
+			Last Name: <input type="text" name="lastname" required> </p>
+			<p>What's your email?: <input type="text" name="email" required></p><br> 
 			<p>Where are you going to be located? 
 			
 			 <select name="states">
@@ -45,7 +46,7 @@
 				</c:forEach> 
 			</select> 	
 			</p><br>
-			<p>How many people are on your team? <input type="number" name="employees" value="1"> </p>
+			<p>How many people are on your team? <input type="number" name="employees" value="1" required> </p>
 			<br></div><br><br>
 			<input class="btn btn-custom" type="submit" value="Next">
 		</form>
@@ -64,5 +65,6 @@
 		This is<br> a parody only. DON'T SUE US OVER A SILLY
 		PROJECT....please!?
 	</footer>
+	
 </body>
 </html>
