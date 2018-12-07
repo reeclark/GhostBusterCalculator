@@ -59,10 +59,15 @@
 		<h5>Profitability</h5>
 			<p>The estimated time it will take for the franchise to earn back the initial startup cost is: ${profit } years</p>
 			</div><br><br>
-	<a href="mailto:${userStuff.email }subject=Ghostbuster Calculator Result&body=First Name:%09${userStuff.firstname }%0D%0DLast Name:%09${userStuff.lastname }%0D
+	<a href="mailto:${userStuff.email }?subject=Ghostbuster Calculator Result&body=First Name:%09${userStuff.firstname }%0D%0DLast Name:%09${userStuff.lastname }%0D
 		%0D
-		Starting City:%09${userStuff.location }%0D%0DNumber of Employees:%09${userStuff.employees }%0D
+		Starting Location:%09${userStuff.state }%0D%0DNumber of Employees:%09${userStuff.employees }%0D
 		%0D
+		Ghostbusters of ${userStuff.state }, will be the first franchise of the Ghostbusters brand in the state.
+		Utilizing existing technology, and capturing methods, our goal is to make ${userStuff.state } a more living-person friendly 
+		environment.%0D
+		%0D
+		Initial 1st Year Costs:%0D
 		Equipment Cost:%09${userStuff.equipmentcost }%0D
 		%0D
 		Vehicle Cost:%09${userStuff.vehiclecost }%0D
@@ -76,7 +81,7 @@
 			Estimated capture rate is%0950%.%0D
 			Total Estimated Annual Revenue: $ ${revenue }%0D
 			%0D
-		The estimated time it will take for the franchise to earn back the initial startup cost is:%09${profit }"
+		The estimated time it will take for the franchise to earn back the initial startup cost is:%09${profit } years..."
 		class="btn btn-custom">Email Me My Summary</a>
 
 
