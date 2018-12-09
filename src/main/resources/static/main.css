@@ -87,6 +87,7 @@ footer {
 }
 
 h1 {
+<<<<<<< HEAD
 	background-color: black;
 	background-image:
 		url(https://www.collegefashion.net/.image/t_share/MTQwODUyMjExNDk1MjE2OTQz/ghostbusters2016titlejpg.jpg);
@@ -94,6 +95,14 @@ h1 {
 	background-repeat: no-repeat;
 	background-size: auto;
 	padding: 115px;
+=======
+    background-color: black;
+    background-image: url(https://www.collegefashion.net/.image/t_share/MTQwODUyMjExNDk1MjE2OTQz/ghostbusters2016titlejpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    padding: 115px;
+>>>>>>> 6d24f23219444bcddec1819d4822fc0834373e73
 }
 
 h2 {
@@ -115,6 +124,7 @@ p {
 }
 
 table {
+<<<<<<< HEAD
 	background-color: black;
 	color: black;
 	font-size: 22px;
@@ -126,3 +136,11 @@ table {
 >>>>>>>
 9727
 d637257df8b72fd8633ed652d90b6000671e
+=======
+    background-color: black;
+    color: black;
+    font-size: 22px;
+
+}
+
+>>>>>>> 6d24f23219444bcddec1819d4822fc0834373e73

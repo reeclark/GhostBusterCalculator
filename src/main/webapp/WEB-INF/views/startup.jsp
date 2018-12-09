@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="main.css">
 <link rel="icon" type="image/png"
 	href="https://vignette.wikia.nocookie.net/someordinarygamers/images/2/28/Ghostbusters-logo-1024x819.jpg/revision/latest?cb=20141104164616">
+<script src="script.js"></script>
 </head>
 <body>
 	<h1></h1>
@@ -61,8 +62,6 @@
 	</form>
 
 
-
-
 	<br>
 	<br>
 
@@ -74,5 +73,6 @@
 		This is<br> a parody only. DON'T SUE US OVER A SILLY
 		PROJECT....please!?
 	</footer>
+
 </body>
 </html>
