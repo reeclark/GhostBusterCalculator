@@ -49,8 +49,38 @@ public class GhostBusterController {
 		return new ModelAndView("about");
 	}
 	
+	@RequestMapping("/peter")
+	public ModelAndView peter() {
+		return new ModelAndView("peter");
+	}
+	
+	@RequestMapping("/ray")
+	public ModelAndView ray() {
+		return new ModelAndView("ray");
+	}
+	
+	@RequestMapping("/egon")
+	public ModelAndView egon() {
+		return new ModelAndView("egon");
+	}
+	
+	@RequestMapping("/winston")
+	public ModelAndView winston() {
+		return new ModelAndView("winston");
+	}
+	
+	@RequestMapping("/janine")
+	public ModelAndView janine() {
+		return new ModelAndView("janine");
+	}
+	
+	@RequestMapping("/slimer")
+	public ModelAndView slimer() {
+		return new ModelAndView("slimer");
+	}
+
 	@RequestMapping("/fun")
-	public ModelAndView fun(){
+	public ModelAndView fun() {
 		return new ModelAndView("fun");
 	}
 
@@ -62,8 +92,8 @@ public class GhostBusterController {
 	@RequestMapping("/adduser")
 	public ModelAndView registerUser(@RequestParam("firstname") String firstname,
 
-			@RequestParam("lastname") String lastname, @RequestParam("email")String email, @RequestParam("employees") Integer employees, @RequestParam("states")String state) {
-		
+			@RequestParam("lastname") String lastname, @RequestParam("email") String email,
+			@RequestParam("employees") Integer employees, @RequestParam("states") String state) {
 
 		String[] splitState = state.split(",");
 		userPermanent = new User(firstname, lastname, email, splitState[1], splitState[0], employees);

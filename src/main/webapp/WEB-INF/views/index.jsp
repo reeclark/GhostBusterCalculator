@@ -15,7 +15,8 @@
 
 	<h1></h1>
 	<br>
-	<a class="btn btn-custom" href="about">About</a> <a class="btn btn-custom" href="/fun">Fun</a>
+	<a class="btn btn-custom" href="about">About</a>
+	<a class="btn btn-custom" href="/fun">Fun</a>
 	<br>
 	<br>
 	<h2>Welcome to the Ghostbusters Franchise Calculator!</h2>
@@ -30,9 +31,8 @@
 		busting ghosts, you're gonna need a load of bread to capitalize! What,
 		you thought the Ghostbusters were going to finance you? If you want to
 		be a part of this amazing opportunity, you need to prove that you can
-		be totally self-sufficient (and 100% financially liable).<br>
-		<br> So, if you're ready, let's get you started on the road to
-		busting!<br>
+		be totally self-sufficient (and 100% financially liable).<br> <br>
+		So, if you're ready, let's get you started on the road to busting!<br>
 		<br> To get the slime flowing, <a class="btn btn-custom"
 			href="startup">Click Here!</a>
 	</p>

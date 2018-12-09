@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +9,8 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" />
 <link rel="stylesheet" href="main.css">
-<link rel="icon" 
-      type="image/png" 
-      href="https://vignette.wikia.nocookie.net/someordinarygamers/images/2/28/Ghostbusters-logo-1024x819.jpg/revision/latest?cb=20141104164616">
+<link rel="icon" type="image/png"
+	href="https://vignette.wikia.nocookie.net/someordinarygamers/images/2/28/Ghostbusters-logo-1024x819.jpg/revision/latest?cb=20141104164616">
 </head>
 <body>
 	<h1></h1>
@@ -31,35 +31,64 @@
 		<p>Owner: ${userStuff.firstname } ${userStuff.lastname }</p>
 		<br>
 
-		<p>Starting Location: ${userStuff.state}</p><br>
-		<p>Number of Employees: ${userStuff.employees }</p><br><br>
-		<h5>Summary</h5><br>
-		<p>Ghostbusters of ${userStuff.state }, will be the first franchise of the Ghostbusters brand in the state.
-		Utilizing existing technology, and capturing methods, our goal is to make ${userStuff.state } a more living-person friendly 
-		environment. </p><br><br>
-		
-		<h5>Description</h5><br>
-		<p>Ghostbusters of ${userStuff.state } will provide paranormal elimination services to the entire state.</P><br><br>
-		
-		<h5>Goal</h5><br>
-		<p>Using the technology, and methods, developed by the Ghostbusters' founders in 1984, this new franchise will 
-		provide the same reliable and timely service that has been a defining characteristic of the Ghostbusters for over 
-		30 years. Services will be provided 24/7 at a reasonable price.</p><br><br>
-		
-		<h5>Initial 1st Year Costs</h5><br><br>
-				<p>Equipment Cost: $ ${userStuff.equipmentcost }</p>
-				<p>Vehicle Cost: $ ${userStuff.vehiclecost }</p>
-				<p>Total Initial Cost: $ ${userStuff.total }<br><br>
-		<h5>Estimated Yearly Revenue</h5><br><br>
-			<p>Average Ghosts Per Year (based on 100% of homicides becoming ghosts): ${ghost }</p>
-			<p>Price of Capturing Ghost: $5000.00</p><br>
-			<p>Estimated capture rate is 50%.</p>
-			<p>Total Estimated Annual Revenue: $ ${revenue }</p><br>
-			
+		<p>Starting Location: ${userStuff.state}</p>
+		<br>
+		<p>Number of Employees: ${userStuff.employees }</p>
+		<br>
+		<br>
+		<h5>Summary</h5>
+		<br>
+		<p>Ghostbusters of ${userStuff.state }, will be the first
+			franchise of the Ghostbusters brand in the state. Utilizing existing
+			technology, and capturing methods, our goal is to make
+			${userStuff.state } a more living-person friendly environment.</p>
+		<br>
+		<br>
+
+		<h5>Description</h5>
+		<br>
+		<p>Ghostbusters of ${userStuff.state } will provide paranormal
+			elimination services to the entire state.</P>
+		<br>
+		<br>
+
+		<h5>Goal</h5>
+		<br>
+		<p>Using the technology, and methods, developed by the
+			Ghostbusters' founders in 1984, this new franchise will provide the
+			same reliable and timely service that has been a defining
+			characteristic of the Ghostbusters for over 30 years. Services will
+			be provided 24/7 at a reasonable price.</p>
+		<br>
+		<br>
+
+		<h5>Initial 1st Year Costs</h5>
+		<br>
+		<br>
+		<p>Equipment Cost: $ ${userStuff.equipmentcost }</p>
+		<p>Vehicle Cost: $ ${userStuff.vehiclecost }</p>
+		<p>
+			Total Initial Cost: $ ${userStuff.total }<br>
+			<br>
+		<h5>Estimated Yearly Revenue</h5>
+		<br>
+		<br>
+		<p>Average Ghosts Per Year (based on 100% of homicides becoming
+			ghosts): ${ghost }</p>
+		<p>Price of Capturing Ghost: $5000.00</p>
+		<br>
+		<p>Estimated capture rate is 50%.</p>
+		<p>Total Estimated Annual Revenue: $ ${revenue }</p>
+		<br>
+
 		<h5>Profitability</h5>
-			<p>The estimated time it will take for the franchise to earn back the initial startup cost is: ${profit } years</p>
-			</div><br><br>
-	<a href="mailto:${userStuff.email }subject=Ghostbuster Calculator Result&body=First Name:%09${userStuff.firstname }%0D%0DLast Name:%09${userStuff.lastname }%0D
+		<p>The estimated time it will take for the franchise to earn back
+			the initial startup cost is: ${profit } years</p>
+	</div>
+	<br>
+	<br>
+	<a
+		href="mailto:${userStuff.email }subject=Ghostbuster Calculator Result&body=First Name:%09${userStuff.firstname }%0D%0DLast Name:%09${userStuff.lastname }%0D
 		%0D
 		Starting City:%09${userStuff.location }%0D%0DNumber of Employees:%09${userStuff.employees }%0D
 		%0D
@@ -85,7 +114,7 @@
 	<br>
 
 
-	
+
 	<br>
 	<br>
 	<br>

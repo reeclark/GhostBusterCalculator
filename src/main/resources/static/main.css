@@ -1,124 +1,128 @@
 body {
-    background-attachment: fixed;
-    background-color: black;
-    background-image: url(https://orig00.deviantart.net/e2ef/f/2012/042/4/e/ghostbusters_wallpaper_dark_by_reaper_tranter-d4pfi9l.png);
-    background-position: center;
-    background-size: auto;
-    color: white;
-    text-align: center;
+	background-attachment: fixed;
+	background-color: black;
+	background-image:
+		url(https://orig00.deviantart.net/e2ef/f/2012/042/4/e/ghostbusters_wallpaper_dark_by_reaper_tranter-d4pfi9l.png);
+	background-position: center;
+	background-size: auto;
+	color: white;
+	text-align: center;
 }
 
 .btn-custom {
-
-    background-image: url(https://media.giphy.com/media/un3NNBF4LSJZ6/giphy.gif);
-    color: white;
-    font-size: 30px;
-    text-shadow: 2px 2px black;
+	background-image:
+		url(https://media.giphy.com/media/un3NNBF4LSJZ6/giphy.gif);
+	color: white;
+	font-size: 30px;
+	text-shadow: 2px 2px black;
 }
 
 .container-custom {
-    background-color: rgb(0, 125, 0, 0.4);
-    border: 2px solid gray;
-    border-radius: 4px;
-    color: white;
-    font-size: 22px;
-    margin: 0 3% 0 3%;
-    padding: 7px;
-    text-align: left;
+	background-color: rgb(0, 125, 0, 0.4);
+	border: 2px solid gray;
+	border-radius: 4px;
+	color: white;
+	font-size: 22px;
+	margin: 0 3% 0 3%;
+	padding: 7px;
+	text-align: left;
 }
 
 .custom-p {
-    background-color: rgb(0, 125, 0, 0.4);
-    border: 2px solid gray;
-    border-radius: 4px;
-    color: white;
-    font-size: 25;
-    margin: 0 2% 0 2%;
-    padding: 10px;
+	background-color: rgb(0, 125, 0, 0.4);
+	border: 2px solid gray;
+	border-radius: 4px;
+	color: white;
+	font-size: 25;
+	margin: 0 2% 0 2%;
+	padding: 10px;
 }
 
 footer {
-    
-    background-color: #042600;
-    border: solid;
-    border: 2px;
-    border-color: darkgrey;
-    bottom: 0;
-    color: white;
-    left: 0;
-    font-size: 15px;
-    padding: 20px;
-    text-align: center;
-    text-shadow: 3px 2px black;
-    width: 100%;
+	background-color: #042600;
+	border: solid;
+	border: 2px;
+	border-color: darkgrey;
+	bottom: 0;
+	color: white;
+	left: 0;
+	font-size: 15px;
+	padding: 20px;
+	text-align: center;
+	text-shadow: 3px 2px black;
+	width: 100%;
 }
 
 .grid-container {
-    border: solid grey;
-    border: 3px;
-    border-radius: 4px;
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 50px;
-    grid-row-gap: 60px;
-    justify-content: space-around;
+	border: solid grey;
+	border: 3px;
+	border-radius: 4px;
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 50px;
+	grid-row-gap: 60px;
+	justify-content: space-around;
 }
 
 .grid-container-custom {
-    border: solid grey;
-    border: 3px;
-    border-radius: 4px;
-    display: inline-grid;
-    grid-column-gap: 0px;
-    grid-template-columns: auto auto;
-    margin: 0 0 0 2%;
+	border: solid grey;
+	border: 3px;
+	border-radius: 4px;
+	display: inline-grid;
+	grid-column-gap: 0px;
+	grid-template-columns: auto auto;
+	margin: 0 0 0 2%;
 }
 
 .grid-item {
-    border: 2px solid grey;
-    border-radius: 4px;
-    padding: 10px;
+	border: 2px solid grey;
+	border-radius: 4px;
+	padding: 10px;
 }
 
 .grid-item-custom {
-    border: 2px solid grey;
-    border-radius: 4px;
-    padding: 10px;
+	border: 2px solid grey;
+	border-radius: 4px;
+	padding: 10px;
 }
 
 h1 {
-    background-color: black;
-    background-image: url(https://www.collegefashion.net/.image/t_share/MTQwODUyMjExNDk1MjE2OTQz/ghostbusters2016titlejpg.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    padding: 115px;
+	background-color: black;
+	background-image:
+		url(https://www.collegefashion.net/.image/t_share/MTQwODUyMjExNDk1MjE2OTQz/ghostbusters2016titlejpg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	padding: 115px;
 }
 
 h2 {
-    font-size: 80px;
-    text-decoration: underline;
-    text-shadow: 2px 2px black;
+	font-size: 80px;
+	text-decoration: underline;
+	text-shadow: 2px 2px black;
 }
 
 h5 {
-    font-size: 35px;
-    text-align: left;
-    text-decoration: underline;
+	font-size: 35px;
+	text-align: left;
+	text-decoration: underline;
 }
 
 p {
-    color: white;
-    font-size: 25px;
-    text-shadow: 3px 2px black;
+	color: white;
+	font-size: 25px;
+	text-shadow: 3px 2px black;
 }
 
 table {
-    background-color: black;
-    color: black;
-    font-size: 22px;
-<<<<<<< HEAD
+	background-color: black;
+	color: black;
+	font-size: 22px;
+	<<<<<<<
+	HEAD
 }
-
 =======
 }
->>>>>>> 9727d637257df8b72fd8633ed652d90b6000671e
+>>>>>>>
+9727
+d637257df8b72fd8633ed652d90b6000671e
