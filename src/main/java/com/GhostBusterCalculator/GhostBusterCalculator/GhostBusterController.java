@@ -204,6 +204,7 @@ public class GhostBusterController {
 		mv.addObject("totalcost", formattedCost);
 		mv.addObject("equipcost", formattedEquip);
 		mv.addObject("vehiclecost", formattedVehicle);
+		mv.addObject("userStuff", userPermanent);
 		return mv;
 	}
 
