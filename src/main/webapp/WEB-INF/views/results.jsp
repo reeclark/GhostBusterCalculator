@@ -65,16 +65,15 @@
 		<h5>Initial 1st Year Costs</h5>
 		<br>
 		<br>
-		<p>Equipment Cost: $ ${userStuff.equipmentcost }</p>
-		<p>Vehicle Cost: $ ${userStuff.vehiclecost }</p>
+		<p>Equipment Cost: $ ${equipcost }</p>
+		<p>Vehicle Cost: $ ${vehiclecost }</p>
 		<p>
-			Total Initial Cost: $ ${userStuff.total }<br>
+			Total Initial Cost: $ ${totalcost }<br>
 			<br>
 		<h5>Estimated Yearly Revenue</h5>
 		<br>
 		<br>
-		<p>Average Ghosts Per Year (based on 100% of homicides becoming
-			ghosts): ${ghost }</p>
+		<p>Average Ghosts Per Year (based on 100% of homicides becoming ghosts): ${ghost }</p>
 		<p>Price of Capturing Ghost: $5000.00</p>
 		<br>
 		<p>Estimated capture rate is 50%.</p>

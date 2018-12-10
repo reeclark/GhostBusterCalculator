@@ -117,7 +117,6 @@ public class GhostBusterController {
 	public ModelAndView addEquipment(@RequestParam("price") Float price, @RequestParam("quantity") String quantity) {
 
 		String[] items = quantity.split(",");
-		System.out.println(Arrays.toString(items));
 		float total = 0;
 		for (int i = 0; i < items.length; i++) {
 			if (!items[i].equals("0")) {
@@ -164,6 +163,7 @@ public class GhostBusterController {
 		Float vehicleCost = userPermanent.getVehiclecost();
 		Float equipmentCost = userPermanent.getEquipmentcost();
 		Float totalCost = vehicleCost + equipmentCost;
+		//String formattedCost = String.format("%.2f", totalCost);
 
 		userPermanent.setTotal(totalCost);
 
@@ -192,11 +192,18 @@ public class GhostBusterController {
 
 		float estimatedRevenue = (float) ((ghostAvg * 5000) * .50);
 		float yearsToProfit = (userPermanent.getTotal() / estimatedRevenue);
+		String formattedRev = String.format("%.2f", estimatedRevenue);
+		String formattedProfit = String.format("%.2f", yearsToProfit);
+		String formattedCost = String.format("%.2f", userPermanent.getTotal());
+		String formattedEquip = String.format("%.2f", userPermanent.getEquipmentcost());
+		String formattedVehicle = String.format("%.2f", userPermanent.getVehiclecost());
 
-		mv.addObject("profit", yearsToProfit);
-		mv.addObject("revenue", estimatedRevenue);
+		mv.addObject("profit", formattedProfit);
+		mv.addObject("revenue", formattedRev);
 		mv.addObject("ghost", ghostAvg);
-		mv.addObject("userStuff", userPermanent);
+		mv.addObject("totalcost", formattedCost);
+		mv.addObject("equipcost", formattedEquip);
+		mv.addObject("vehiclecost", formattedVehicle);
 		return mv;
 	}
 
