@@ -66,7 +66,9 @@
 		<br>
 		<br>
 		<p>Equipment Cost: $ ${userStuff.equipmentcost }</p>
+		<a class="btn btn-custom" href="/vehicle">Change Equipment</a>
 		<p>Vehicle Cost: $ ${userStuff.vehiclecost }</p>
+		<a class="btn btn-custom" href="/vehicle">Change Vehicle</a>
 		<p>
 			Total Initial Cost: $ ${userStuff.total }<br>
 			<br>
