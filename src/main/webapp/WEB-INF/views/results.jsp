@@ -66,7 +66,9 @@
 		<br>
 		<br>
 		<p>Equipment Cost: $ ${equipcost }</p>
+		<a class="btn btn-custom" href="/equipment">Change Equipment</a>
 		<p>Vehicle Cost: $ ${vehiclecost }</p>
+		<a class="btn btn-custom" href="/vehicle">Change Vehicle</a>
 		<p>
 			Total Initial Cost: $ ${totalcost }<br>
 			<br>
