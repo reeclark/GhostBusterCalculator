@@ -45,7 +45,7 @@
 						<td>$ ${v.formattedPrice}<input type="hidden" name="price"
 							value="${v.price }"></td>
 						<td><img src="${v.image }" width="175" height="175"></td>
-						<td><input type="number" name="quantity" value="0" required></td>
+						<td><input type="number" name="quantity" value="0" min="0" required></td>
 					</tr>
 				</c:forEach>
 			</table>

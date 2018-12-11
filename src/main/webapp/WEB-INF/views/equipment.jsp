@@ -51,7 +51,7 @@
 							<td>$ ${e.formattedPrice}<input type="hidden" name="price"
 								value="${e.price }"></td>
 							<td><img src="${e.image }" width="115" height="165"></td>
-							<td><input type="number" name="quantity" value="0" required></td>
+							<td><input type="number" name="quantity" value="0" min="0" required></td>
 						</tr>
 					</tbody>
 				</c:forEach>
