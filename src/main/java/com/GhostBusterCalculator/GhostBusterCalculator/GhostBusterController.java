@@ -48,32 +48,32 @@ public class GhostBusterController {
 	public ModelAndView about() {
 		return new ModelAndView("about");
 	}
-	
+
 	@RequestMapping("/peter")
 	public ModelAndView peter() {
 		return new ModelAndView("peter");
 	}
-	
+
 	@RequestMapping("/ray")
 	public ModelAndView ray() {
 		return new ModelAndView("ray");
 	}
-	
+
 	@RequestMapping("/egon")
 	public ModelAndView egon() {
 		return new ModelAndView("egon");
 	}
-	
+
 	@RequestMapping("/winston")
 	public ModelAndView winston() {
 		return new ModelAndView("winston");
 	}
-	
+
 	@RequestMapping("/janine")
 	public ModelAndView janine() {
 		return new ModelAndView("janine");
 	}
-	
+
 	@RequestMapping("/slimer")
 	public ModelAndView slimer() {
 		return new ModelAndView("slimer");
@@ -123,7 +123,6 @@ public class GhostBusterController {
 				int numItems = Integer.parseInt(items[i]);
 				Equipment addEquipment = e.findById(i + 1).orElse(null);
 				Float equipmentcost = addEquipment.getPrice() * numItems;
-				System.out.println(addEquipment + " " + numItems + "  " + equipmentcost);
 				total += equipmentcost;
 			}
 
@@ -163,7 +162,7 @@ public class GhostBusterController {
 		Float vehicleCost = userPermanent.getVehiclecost();
 		Float equipmentCost = userPermanent.getEquipmentcost();
 		Float totalCost = vehicleCost + equipmentCost;
-		//String formattedCost = String.format("%.2f", totalCost);
+		// String formattedCost = String.format("%.2f", totalCost);
 
 		userPermanent.setTotal(totalCost);
 
@@ -176,7 +175,8 @@ public class GhostBusterController {
 	public ModelAndView getGhostData() {
 		ModelAndView mv = new ModelAndView("results");
 		RestTemplate rt = new RestTemplate();
-		GhostWrapper gW = rt.getForObject("https://api.usa.gov/crime/fbi/sapi/api/estimates/states/" + userPermanent.getLocation() + "?api_key=" + crimeKey, GhostWrapper.class);
+		GhostWrapper gW = rt.getForObject("https://api.usa.gov/crime/fbi/sapi/api/estimates/states/"
+				+ userPermanent.getLocation() + "?api_key=" + crimeKey, GhostWrapper.class);
 
 		List<GhostData> gD = gW.getResults();
 		Integer y = 0;
