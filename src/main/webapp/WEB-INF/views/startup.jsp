@@ -33,13 +33,13 @@
 
 
 
-		<form action="adduser" method="post" onsubmit="return validateInfo()">
+		<form action="adduser" method="post">
 			<p>
-				First Name: <input type="text" name="firstname"> Last Name:
-				<input type="text" name="lastname">
+				First Name: <input type="text" name="firstname" pattern="[A-Za-z]{2,}" title="First name entry, has to be more than 2 characters. no spaces/special characters." required> Last Name:
+				<input type="text" name="lastname" pattern="[A-Za-z]{2,}" title="Last name entry, has to be more than 2 characters. no spaces/special characters." required>
 			</p>
 			<p>
-				What's your email?: <input type="text" name="email">
+				What's your email?: <input type="text" name="email" pattern="\w{5,30}@\w{5,10}[.]\w{2,4}" title="Please enter a valid email address." required>
 			</p>
 			<br>
 			<p>
@@ -52,7 +52,7 @@
 			<br>
 			<p>
 				How many people are on your team? <input type="number"
-					name="employees" value="1">
+					name="employees" value="1" min="1">
 			</p>
 			<br>
 	</div>
