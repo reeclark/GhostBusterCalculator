@@ -39,7 +39,7 @@
 				<input type="text" name="lastname" pattern="[A-Za-z]{2,}" title="Last name entry, has to be more than 2 characters. no spaces/special characters." required>
 			</p>
 			<p>
-				What's your email?: <input type="text" name="email" pattern="[\w\S]{5,30}@\w{5,10}[.]\w{2,4}" title="Please enter a valid email address." required>
+				What's your email?: <input type="text" name="email" pattern="[\w\S]{5,60}@\w{5,10}[.]\w{2,4}" title="Please enter a valid email address." required>
 			</p>
 			<br>
 			<p>
